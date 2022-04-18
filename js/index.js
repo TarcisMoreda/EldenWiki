@@ -28,7 +28,7 @@ let guia_finais = document.querySelector('.guia-finais');
 let guia_ngplus = document.querySelector('.guia-ngplus');
 
 async function changePage(page){
-	content.innerHTML = await fetch(`./`).then(res => console.log(res));
+	fetch(`./`).then(res => console.log(res));
 	return;
 }
 
