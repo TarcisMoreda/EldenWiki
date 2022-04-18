@@ -17,7 +17,7 @@ let cardTemplate = `
 `;
 
 async function loadCardsInternal(file){
-	let cards = await fetch(`./json/${file}.json`).then(res => res.json());
+	let cards = await fetch(`../json/${file}.json`).then(res => res.json());
 	let cardsHTML = '';
 
 	document.querySelector('.item-type').innerHTML = cards['type'];
@@ -39,21 +39,21 @@ async function loadCardsInternal(file){
 		let card = cards['itens'][i];
 		let cardImage = document.querySelector(`.card-image-${i}`);
 		
-		cardImage.style.backgroundImage = `url(img/${card['img']})`;
+		cardImage.style.backgroundImage = `url(${card['img']})`;
 	}
 
 	return;
 }
 
 async function changePage(){
-	document.querySelector('.content').innerHTML = await fetch(`./html/content.html`).then(res => res.text());
+	document.querySelector('.content').innerHTML = await fetch(`../html/content.html`).then(res => res.text());
 	return;
 }
 
 export async function loadCards(file){
 	await loadCardsInternal(file);
 	let cards = document.querySelectorAll('.card');
-	let cardsJson = await fetch(`./json/${file}.json`).then(res => res.json());
+	let cardsJson = await fetch(`../json/${file}.json`).then(res => res.json());
 	
 	for(let i=0; i<cards.length; i++){
 		let card = cards[i];
