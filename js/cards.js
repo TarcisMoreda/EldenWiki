@@ -39,7 +39,7 @@ async function loadCardsInternal(cards){
 	for(let i=0; i<cards['itens'].length; i++){
 		let card = cards['itens'][i];
 		let cardImage = document.querySelector(`.card-image-${i}`);
-		cardImage.style.backgroundImage = `url(${card['img']})`;
+		cardImage.style.backgroundImage = `url(./${card['img']})`;
 	}
 
 	return;
@@ -91,7 +91,7 @@ export async function loadCards(file){
 					references.innerHTML += '<li>Nenhum item referenciado.</li>';
 				}
 				references.innerHTML += "</ul>";
-				card_image.style.backgroundImage = `url(${jsonInfo['img']})`;
+				card_image.style.backgroundImage = `url(./${jsonInfo['img']})`;
 
 				if(cardsJson['type'] == 'Consumíveis/Chaves:'){
 					let card_title = document.querySelector('.card-title');
