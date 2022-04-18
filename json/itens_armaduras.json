@@ -6,7 +6,7 @@
 			"img":"img/itens/armaduras/capuz_preto.png",
 			"ig-description":"Capuz de tecido preto sem brilho que concela a identidade do portador.<br><br>Nesse mundo,tem muito pouco que é nescessário de se saber.",
 			"description":"Um simples capuz que tem defesas baixas, porém com peso leve e com grande flexibilidade de estilo para o visual de seu personagem.",
-			"type":"helmo",
+			"type":"Elmo",
 			"dmg-negation":{
 				"physical":2.8,
 				"strike":3.1,
@@ -134,6 +134,12 @@
 			]
 		}
     ],
+	"categories":[
+		"Elmo",
+		"Armadura",
+		"Luvas",
+		"Botas"
+	],
     "template":{
         "name":"",
         "img":"",

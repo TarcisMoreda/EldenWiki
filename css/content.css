@@ -43,7 +43,7 @@
 .title{
 	font-size: 22px;
 	font-weight: 500;
-	color: #fff;
+	color: #F2B263;
 }
 
 .text-medium{
@@ -94,6 +94,7 @@
 }
 
 .inner-title{
+	color: #F2B263;
 	font-size: 22px;
 	font-weight: 500;
 }

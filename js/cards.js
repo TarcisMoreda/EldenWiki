@@ -1,40 +1,50 @@
-let cardTemplate = `
-<div class="card">
-	<div class="card-image-container">
-		<div class="card-image"></div>
-	</div>
-	<div class="card-content">
-		<p class="card-title text-medium">
-			Name
-		</p>
-		<div class="card-info">
-			<p class="text-medium">
-				ig-description
+async function loadCardsInternal(cards){
+	let cardTemplate = `
+	<div class="card">
+		<div class="card-image-container">
+			<div class="card-image"></div>
+		</div>
+		<div class="card-content">
+			<p class="card-title text-medium">
+				Name
 			</p>
+			<div class="card-info">
+				<p class="text-medium">
+					ig-description
+				</p>
+			</div>
 		</div>
 	</div>
-</div>
-`;
-
-async function loadCardsInternal(cards){
-	let cardsHTML = '';
+	`;
 
 	let item_type = document.querySelector('.item-type');
 	item_type.innerHTML = cards['type'];
 
+	let cardHTML = [];
+	for (let category in cards['categories']){
+		cardHTML[cards['categories'][category]] = `
+		<div class="item-type">${cards['categories'][category]}:</div>
+		<section class="cards">`;
+	}
+
+
 	for(let i=0; i<cards['itens'].length; i++){
 		let card = cards['itens'][i];
-		let cardHTML = cardTemplate;
+		let htmlTemp = cardTemplate;
 
-		cardHTML = cardHTML.replace('class="card"', `class="card card-${i}"`);
-		cardHTML = cardHTML.replace('Name', card['name']);
-		cardHTML = cardHTML.replace('ig-description', card['ig-description'].split('<br>')[0]);
-		cardHTML = cardHTML.replace('class="card-image"', `class="card-image card-image-${i}"`);
-		cardsHTML += cardHTML;
+		htmlTemp = htmlTemp.replace('class="card"', `class="card card-${i}"`);
+		htmlTemp = htmlTemp.replace('Name', card['name']);
+		htmlTemp = htmlTemp.replace('ig-description', card['ig-description'].split('<br>')[0]);
+		htmlTemp = htmlTemp.replace('class="card-image"', `class="card-image card-image-${i}"`);
+	
+		cardHTML[card['type']] += htmlTemp;
 	}
 
 	let cardsContainer = document.querySelector('.cards');
-	cardsContainer.innerHTML = cardsHTML;
+	for (let html in cardHTML){
+		cardHTML[html] += '</section>';
+		cardsContainer.innerHTML += cardHTML[html];
+	}
 
 	for(let i=0; i<cards['itens'].length; i++){
 		let card = cards['itens'][i];

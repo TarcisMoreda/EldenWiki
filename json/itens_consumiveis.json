@@ -1,5 +1,5 @@
 {
-    "type":"Consumíveis/Chaves:",
+    "type":"Itens:",
     "itens":[
         {
             "name":"Frasco de Lágrimas Carmesins",
@@ -7,6 +7,7 @@
             "ig-description":"Um frasco sagrado feito com base em um cálice dourado que já foi agraciado por uma lágrima da vida.<br><br>Enchido com lágrimas carmesins, esse Frasco recupera PV com o uso.<br>Descançe em um Ponto de Graça para reabastecer.<br><br>É dito que a Donzela dos Dedos irá conceder dois de tais cálices Frascos ao Manchado escolhido quando eles se encontrarem.",
             "description":"Um dos frascos de recuperação do jogo, após uma curta animação ele restaura uma quantidade substancial dos PV do jogador. Para aumentar sua potência utilize Lágrimas Sagradas, para aumentar a quantidade utilize Sementes Douradas.",
             "max-quantity":14,
+            "type":"Consumível",
             "locations":[
                 "Automaticamente no inventário do jogador após o tutorial."
             ],
@@ -21,6 +22,7 @@
             "ig-description":"Um frasco sagrado feito com base em um cálice dourado que já foi agraciado por uma lágrima da vida.<br><br>Enchido com lágrimas cerúleas, esse Frasco recupera PF com o uso.<br>Descançe em um Ponto de Graça para reabastecer.<br><br>É dito que a Donzela dos Dedos irá conceder dois de tais cálices Frascos ao Manchado escolhido quando eles se encontrarem.",
             "description":"Um dos frascos de recuperação do jogo, após uma curta animação ele restaura uma quantidade substancial dos PF do jogador. Para aumentar sua potência utilize Lágrimas Sagradas, para aumentar a quantidade utilize Sementes Douradas.",
             "max-quantity":14,
+            "type":"Consumível",
             "locations":[
                 "Automaticamente no inventário do jogador após o tutorial."
             ],
@@ -34,6 +36,7 @@
             "img":"img/itens/consumiveis/lagrima_sagrada.png",
             "ig-description":"Benção da Térvore, adorada nas igrejas de todas as terras; este é apenas um vestígio.<br><br>Aumenta a potência dos restaurativa dos Frascos Sagrados.<br>(Apenas pode ser usado após descançar em uma Graça.)<br><br>Durante a era da Térvore, essas lágrimas eram usadas para espalhar a fé, pois a deles já foi uma certa benção.",
             "description":"Item utilizado para aumentar a potência dos frascos, os fazendo recuperar uma quantidade maior de PV e PF.<br>Para utiliza-la basta sentar em uma Graça, ir ao menu Frascos, e ir à opção Aumentar potência de Frasco.<br>O seu frasco pode ficar com uma potência máxima de +12.",
+            "type":"Consumível",
             "max-quantity":0,
             "locations":[
                 "Na região sul de Limgrave, do outro lado da Ponte do Sacrifício. A Igreja da Peregrinação está diretamente ao norte do símbolo da Erdtree no mapa. Dentro haverá uma Lágrima Sagrada.",
@@ -58,6 +61,7 @@
             "img":"img/itens/consumiveis/semente_dourada.png",
             "ig-description":"Uma Semente Dourada, achada na base de uma árvore ilusória.<br><br>Aumenta o número de usos do Frasco Sagrado.<br>(Apenas pode ser usado após descançar em uma Graça.)<br><br>Quando o Elden Ring foi estilhaçado, essas sementes caíram da Térvore, espalhando-se pelas várias terras, como se a vida em si soubesse que o fim chegou.",
             "description":"Item utilizado para aumentar a quantidade de utilização dos frascos.<br>Para utiliza-la basta sentar em uma Graça, ir ao menu Frascos, e ir à opção Aumentar quantidade de usos do Frasco.<br>O máximo de usos que o frasco pode ter são 14 com o custo de cada melhora seguindo os seguintes custos:<br>5/6 Frascos - 1 Semente cada;<br>7/8 Frascos - 2 Sementes cada;<br>9/10 Frascos - 3 Sementes cada;<br>11/12 Frascos - 4 Sementes cada;<br>13/14 Frascos - 5 Sementes cada.<br>No total são nescessárias 30 Sementes para o seu Frasco chegar na capacidade máxima.",
+            "type":"Consumível",
             "max-quantity":0,
             "locations":[
                 "Dropada pelo chefe “Ulcerated Tree Spirit” no fundo do “Fringefolk Hero’s Grave”. Você vai precisar de uma chave de pedra para chegar lá.",
@@ -97,12 +101,17 @@
             "ig-description":"Uma chave com forma de uma espada de pedra.<br><br>Quebra os selos nas estátuas de diabinhos, mas fica presa na estátua após o uso, podendo apenas ser usada uma vez.<br><br>Pense bem antes de usar uma.",
             "description":"É um item chave do jogo, muitos itens adicionais e muito úteis ficam atrás de selos que nescessitam desse item para desbloquear, apartir da metade do jogo muito fácilmente achado.",
             "max-quantity":0,
+            "type":"Chave",
             "locations":[
                 "Grande quantidade achados pelo jogo todo, basta explorar o mapa e encontrar os itens.",
                 "Muitos mercadores vendem o item por uma média de 4000 Runas cada."
             ],
             "references":[]
         }
+    ],
+    "categories":[
+        "Consumível",
+        "Chave"
     ],
     "template":{
         "name":"",
