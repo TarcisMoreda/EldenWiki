@@ -40,10 +40,10 @@ async function loadCardsInternal(cards){
 		cardHTML[card['type']] += htmlTemp;
 	}
 
-	let cardsContainer = document.querySelector('.cards');
+	let content = document.querySelector('.content');
 	for (let html in cardHTML){
 		cardHTML[html] += '</section>';
-		cardsContainer.innerHTML += cardHTML[html];
+		content.innerHTML += cardHTML[html];
 	}
 
 	for(let i=0; i<cards['itens'].length; i++){
