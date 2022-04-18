@@ -14,7 +14,7 @@
 				"pierce":3.1,
 				"magic":3.1,
 				"fire":3.4,
-				"lightining":3.6,
+				"lightning":3.6,
 				"holy":3.1
 			},
 			"resistance":{
@@ -35,112 +35,103 @@
 			]
 		},
 		{
-			"name":"",
-			"img":"",
-			"ig-description":"",
-			"description":"",
-			"type":"",
+			"name":"Armadura de Couro",
+			"img":"img/itens/armaduras/armadura_de_couro.png",
+			"ig-description":"Uma armadura de couro leve e provada em batalha por um soldado experiênte.<br><br>Muitos admiram seu portador pelo seu espírito cavalheiresco e franco.",
+			"description":"Uma armadura leve com poucas resistências, porém uma das mais bonitas do jogo, uma armadura muito comum de se ver famoso youtuber Filipe Ramos em sua personagem Sharon.",
+			"type":"Armadura",
 			"dmg-negation":{
-				"physical":0.0,
-				"strike":0.0,
-				"slash":0.0,
-				"pierce":0.0,
-				"magic":0.0,
-				"fire":0.0,
-				"lightining":0.0,
-				"holy":0.0
+				"physical":8.0,
+				"strike":9.5,
+				"slash":8.0,
+				"pierce":8.8,
+				"magic":9.5,
+				"fire":9.5,
+				"lightning":10.2,
+				"holy":10.2
 			},
 			"resistance":{
-				"immunity":0,
-				"robustness":0,
-				"focus":0,
-				"vitality":0,
-				"poise":0
+				"immunity":60,
+				"robustness":35,
+				"focus":42,
+				"vitality":50,
+				"poise":2
 			},
-			"weight":0.0,
-			"locations":[],
-			"references":[]
+			"weight":7.1,
+			"locations":[
+				"Item dropado do Confiável Patches em Murkwater Cave."
+			],
+			"references":[
+				"Capuz Preto",
+				"Luvas de Couro",
+				"Botas de Couro"
+			]
 		},
 		{
-			"name":"",
-			"img":"",
-			"ig-description":"",
-			"description":"",
-			"type":"",
+			"name":"Luvas de Couro",
+			"img":"img/itens/armaduras/luvas_de_couro.png",
+			"ig-description":"Um par de luvas de couro leves e provadas em batalha por um soldado experiênte.<br><br>Muitos admiram seu portador pelo seu espírito cavalheiresco e franco.",
+			"description":"Um par de luvas leves com poucas resistências, porém uma das mais bonitas do jogo, uma luva muito comum de se ver famoso youtuber Filipe Ramos em sua personagem Sharon.",
+			"type":"Luvas",
 			"dmg-negation":{
-				"physical":0.0,
-				"strike":0.0,
-				"slash":0.0,
-				"pierce":0.0,
-				"magic":0.0,
-				"fire":0.0,
-				"lightining":0.0,
-				"holy":0.0
+				"physical":1.9,
+				"strike":2.3,
+				"slash":1.9,
+				"pierce":2.1,
+				"magic":2.3,
+				"fire":2.3,
+				"lightning":2.5,
+				"holy":2.5
 			},
 			"resistance":{
-				"immunity":0,
-				"robustness":0,
-				"focus":0,
-				"vitality":0,
-				"poise":0
+				"immunity":20,
+				"robustness":12,
+				"focus":14,
+				"vitality":17,
+				"poise":1
 			},
-			"weight":0.0,
-			"locations":[],
-			"references":[]
+			"weight":2.4,
+			"locations":[
+				"Item dropado do Confiável Patches em Murkwater Cave."
+			],
+			"references":[
+				"Capuz Preto",
+				"Armadura de Couro",
+				"Botas de Couro"
+			]
 		},
 		{
-			"name":"",
-			"img":"",
-			"ig-description":"",
-			"description":"",
-			"type":"",
+			"name":"Botas de Couro",
+			"img":"img/itens/armaduras/botas_de_couro.png",
+			"ig-description":"Um par de botas de couro leves e provadas em batalha por um soldado experiênte.<br><br>Muitos admiram seu portador pelo seu espírito cavalheiresco e franco.",
+			"description":"Um par de botas leves com poucas resistências, porém uma das mais bonitas do jogo, uma bota muito comum de se ver famoso youtuber Filipe Ramos em sua personagem Sharon.",
+			"type":"Botas",
 			"dmg-negation":{
-				"physical":0.0,
-				"strike":0.0,
-				"slash":0.0,
-				"pierce":0.0,
-				"magic":0.0,
-				"fire":0.0,
-				"lightining":0.0,
-				"holy":0.0
+				"physical":4.5,
+				"strike":5.4,
+				"slash":4.5,
+				"pierce":5.0,
+				"magic":5.4,
+				"fire":5.4,
+				"lightning":5.8,
+				"holy":5.8
 			},
 			"resistance":{
-				"immunity":0,
-				"robustness":0,
-				"focus":0,
-				"vitality":0,
-				"poise":0
+				"immunity":37,
+				"robustness":22,
+				"focus":26,
+				"vitality":31,
+				"poise":1
 			},
-			"weight":0.0,
-			"locations":[],
-			"references":[]
-		},
-		{
-			"name":"",
-			"img":"",
-			"ig-description":"",
-			"description":"",
-			"type":"",
-			"dmg-negation":{
-				"physical":0.0,
-				"strike":0.0,
-				"slash":0.0,
-				"pierce":0.0,
-				"magic":0.0,
-				"fire":0.0,
-				"lightining":0.0,
-				"holy":0.0
-			},
-			"resistance":{
-				"immunity":0,
-				"robustness":0,
-				"focus":0,
-				"vitality":0,
-				"poise":0
-			},
-			"weight":0.0,
-			"locations":[],
-			"references":[]
+			"weight":4.4,
+			"locations":[
+				"Item dropado do Confiável Patches em Murkwater Cave."
+			],
+			"references":[
+				"Capuz Preto",
+				"Armadura de Couro",
+				"Luvas de Couro"
+			]
 		}
     ],
     "template":{
@@ -156,7 +147,7 @@
 			"pierce":0.0,
 			"magic":0.0,
 			"fire":0.0,
-			"lightining":0.0,
+			"lightning":0.0,
 			"holy":0.0
 		},
 		"resistance":{

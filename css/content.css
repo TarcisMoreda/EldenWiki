@@ -24,6 +24,7 @@
 
 .right{
 	align-items: center;
+	justify-content: flex-start;
 }
 
 .ig-description{
@@ -96,10 +97,19 @@
 	font-weight: 500;
 }
 
+.inner-title{
+	font-size: 22px;
+	font-weight: 500;
+}
+
 .card-info{
 	display: flex;
 	align-self: end;
 	align-items: center;
+}
+
+.card-info ul{
+	border-bottom: #F2B263 solid 1px;
 }
 
 @media screen and (max-width: 910px){

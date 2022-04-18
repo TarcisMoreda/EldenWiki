@@ -16,11 +16,11 @@ let cardTemplate = `
 </div>
 `;
 
-async function loadCardsInternal(file){
-	let cards = await fetch(`json/${file}.json`).then(res => res.json());
+async function loadCardsInternal(cards){
 	let cardsHTML = '';
 
-	document.querySelector('.item-type').innerHTML = cards['type'];
+	let item_type = document.querySelector('.item-type');
+	item_type.innerHTML = cards['type'];
 
 	for(let i=0; i<cards['itens'].length; i++){
 		let card = cards['itens'][i];
@@ -32,13 +32,13 @@ async function loadCardsInternal(file){
 		cardHTML = cardHTML.replace('class="card-image"', `class="card-image card-image-${i}"`);
 		cardsHTML += cardHTML;
 	}
- 
-	document.querySelector('.cards').innerHTML = cardsHTML;
+
+	let cardsContainer = document.querySelector('.cards');
+	cardsContainer.innerHTML = cardsHTML;
 
 	for(let i=0; i<cards['itens'].length; i++){
 		let card = cards['itens'][i];
 		let cardImage = document.querySelector(`.card-image-${i}`);
-		
 		cardImage.style.backgroundImage = `url(${card['img']})`;
 	}
 
@@ -46,14 +46,15 @@ async function loadCardsInternal(file){
 }
 
 async function changePage(){
-	document.querySelector('.content').innerHTML = await fetch(`html/content.html`).then(res => res.text());
+	let content = document.querySelector('.content');
+	content.innerHTML = await fetch(`html/content.html`).then(res => res.text());
 	return;
 }
 
 export async function loadCards(file){
-	await loadCardsInternal(file);
-	let cards = document.querySelectorAll('.card');
 	let cardsJson = await fetch(`json/${file}.json`).then(res => res.json());
+	await loadCardsInternal(cardsJson);
+	let cards = document.querySelectorAll('.card');
 	
 	for(let i=0; i<cards.length; i++){
 		let card = cards[i];
@@ -61,33 +62,69 @@ export async function loadCards(file){
 		
 		card.addEventListener('click', () => {
 			changePage().then(() => {
-				document.querySelector('.card-title').innerHTML = jsonInfo['name'];
-				document.querySelector('.description').innerHTML = jsonInfo['description'];
-				document.querySelector('.ig-description').innerHTML = jsonInfo['ig-description'];
+				let card_title = document.querySelector('.card-title');
+				let description = document.querySelector('.description');
+				let ig_description = document.querySelector('.ig-description');
+				let locations = document.querySelector('.locations');
+				let references = document.querySelector('.references');
+				let card_image = document.querySelector('.card-image');
 
-				document.querySelector('.locations').innerHTML += "<ul>";
+				card_title.innerHTML = jsonInfo['name'];
+				description.innerHTML = jsonInfo['description'];
+				ig_description.innerHTML = jsonInfo['ig-description'];
+
+				locations.innerHTML += "<ul>";
 				for(let j=0; j<jsonInfo['locations'].length; j++){
 					let location = jsonInfo['locations'][j];
-					document.querySelector('.locations').innerHTML += `<li>${location}</li>`;
+					locations.innerHTML += `<li>${location}</li>`;
 				}
-				document.querySelector('.locations').innerHTML += "</ul>";
+				locations.innerHTML += "</ul>";
 				
-				document.querySelector('.references').innerHTML += "<ul>";
+				references.innerHTML += "<ul>";
 				if(jsonInfo['references'].length > 0){
 					for(let j=0; j<jsonInfo['references'].length; j++){
 						let reference = jsonInfo['references'][j];
-						document.querySelector('.references').innerHTML += `<li>${reference}</li>`;
+						references.innerHTML += `<li>${reference}</li>`;
 					}
 				}
 				else{
-					document.querySelector('.references').innerHTML += '<li>Nenhum item referenciado.</li>';
+					references.innerHTML += '<li>Nenhum item referenciado.</li>';
 				}
-				document.querySelector('.references').innerHTML += "</ul>";
-				document.querySelector('.card-image').style.backgroundImage = `url(${jsonInfo['img']})`;
+				references.innerHTML += "</ul>";
+				card_image.style.backgroundImage = `url(${jsonInfo['img']})`;
 
 				if(cardsJson['type'] == 'Consumíveis/Chaves:'){
-					document.querySelector('.card-info').style.display = 'none';
-					document.querySelector('.card-title').style.marginBottom = '0px';
+					let card_title = document.querySelector('.card-title');
+					card_title.style.marginBottom = '0px';
+				}
+				else if(cardsJson['type'] == 'Armaduras:'){
+					let card_info = document.querySelector('.card-info');
+					card_info = card_info.querySelector('.text-medium');
+					
+					let descriptionTemplate = `
+					<span class="inner-title">Negação de Dano:</span><br><br>
+					<ul>
+						<li>Físico: ${jsonInfo['dmg-negation']['physical']}</li>
+							<li>Concussão: ${jsonInfo['dmg-negation']['strike']}</li>
+							<li>Corte: ${jsonInfo['dmg-negation']['slash']}</li>
+							<li>Perfuração: ${jsonInfo['dmg-negation']['pierce']}</li>
+						<li>Mágico: ${jsonInfo['dmg-negation']['magic']}</li>
+						<li>Fogo: ${jsonInfo['dmg-negation']['fire']}</li>
+						<li>Raio: ${jsonInfo['dmg-negation']['lightning']}</li>
+						<li>Sagrados: ${jsonInfo['dmg-negation']['holy']}</li>
+					</ul><br>
+					<span class="inner-title">Resistências:</span><br><br>
+					<ul>
+						<li>Imunidade: ${jsonInfo['resistance']['immunity']}</li>
+						<li>Robustês: ${jsonInfo['resistance']['robustness']}</li>
+						<li>Foco: ${jsonInfo['resistance']['focus']}</li>
+						<li>Vitalidade: ${jsonInfo['resistance']['vitality']}</li>
+						<li>Estabilidade: ${jsonInfo['resistance']['poise']}</li>
+					</ul><br>
+					<span class="inner-title">Peso: ${jsonInfo['weight']}</span>
+					`;
+
+					card_info.innerHTML = descriptionTemplate;
 				}
 			});
 		});

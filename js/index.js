@@ -5,8 +5,6 @@ import {loadCards} from './cards.js';
 Esse arquivo é o arquivo principal do projeto.
 Ele contém funções para execução do menu e para mudança do conteúdo da página.
 */
-let content = document.querySelector('.content');
-
 let logo = document.querySelector('.logo');
 let inicial = document.querySelector('.inicial');
 
@@ -28,7 +26,8 @@ let guia_finais = document.querySelector('.guia-finais');
 let guia_ngplus = document.querySelector('.guia-ngplus');
 
 async function changePage(page){
-	fetch(`./`).then(res => console.log(res));
+	let content = document.querySelector('.content');
+	content.innerHTML = await fetch(`../html/${page}.html`).then(res => res.text());
 	return;
 }
 
