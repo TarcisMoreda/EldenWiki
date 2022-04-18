@@ -83,7 +83,7 @@ export async function loadCards(file){
 					document.querySelector('.references').innerHTML += '<li>Nenhum item referenciado.</li>';
 				}
 				document.querySelector('.references').innerHTML += "</ul>";
-				document.querySelector('.card-image').style.backgroundImage = `url(img/${jsonInfo['img']})`;
+				document.querySelector('.card-image').style.backgroundImage = `url(${jsonInfo['img']})`;
 
 				if(cardsJson['type'] == 'Consumíveis/Chaves:'){
 					document.querySelector('.card-info').style.display = 'none';

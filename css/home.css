@@ -21,7 +21,7 @@
 	width: 90%;
 	height: auto;
 	aspect-ratio: 1/1;
-	background-image: url(/img/logo.png);
+	background-image: url(../img/logo.png);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
