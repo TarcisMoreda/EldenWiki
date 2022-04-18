@@ -47,12 +47,12 @@ async function loadCardsInternal(cards){
 
 async function changePage(){
 	let content = document.querySelector('.content');
-	content.innerHTML = await fetch(`EldenWiki/html/content.html`).then(res => res.text());
+	content.innerHTML = await fetch(`./html/content.html`).then(res => res.text());
 	return;
 }
 
 export async function loadCards(file){
-	let cardsJson = await fetch(`EldenWiki/json/${file}.json`).then(res => res.json());
+	let cardsJson = await fetch(`./json/${file}.json`).then(res => res.json());
 	await loadCardsInternal(cardsJson);
 	let cards = document.querySelectorAll('.card');
 	
