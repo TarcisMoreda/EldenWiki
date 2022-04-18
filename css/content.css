@@ -12,17 +12,17 @@
 	flex-direction: column;
 	width: 100%;
 	height: auto;
-	gap: 10px;
 	justify-content: center;
-	
+	gap: 10px;
 }
 
 .left{
-	flex-basis: 75%;
-	gap: 10px;
+	flex-basis: 70%;
+	justify-content: flex-start;
 }
 
 .right{
+	flex-basis: 30%;
 	align-items: center;
 	justify-content: flex-start;
 }
@@ -38,10 +38,6 @@
 	font-size: 16px;
 	font-style: italic;
 	background-color: #18403C;
-}
-
-.right{
-	flex-basis: 25%;
 }
 
 .title{
@@ -63,15 +59,15 @@
 	background-color: #18403C;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #F2B263;
 	border-radius: 10px;
+	border-color: #F2B263;
 }
 
 .card-image-container{
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .card-image{
