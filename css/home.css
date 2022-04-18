@@ -1,0 +1,74 @@
+/*
+#############################################################################
+#					Estilo do corpo principal da página						#
+#############################################################################
+*/
+.content{
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 1fr;
+}
+
+.logo-wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#game-logo{
+	width: 90%;
+	height: auto;
+	aspect-ratio: 1/1;
+	background-image: url(/img/logo.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #F2B263;
+	border-radius: 10px;
+}
+
+#welcome{
+	padding: 10px;
+	height: 100%;
+	color: #fff;
+	text-decoration: none;
+	font-size: x-large;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: auto;
+	overflow-wrap: break-word;
+}
+
+#welcome span{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.grid-image{
+	grid-row: span 2/auto;
+	grid-column: span 2/auto;
+}
+
+.grid-text{
+	grid-column: span 2/auto;
+}
+
+@media screen and (orientation: portrait),
+screen and (max-width: 910px){
+	.content{
+		grid-template-columns: auto;
+	}
+	
+	.grid-image{
+		grid-column: auto;
+	}
+	
+	.grid-text{
+		grid-column: auto;
+	}
+}

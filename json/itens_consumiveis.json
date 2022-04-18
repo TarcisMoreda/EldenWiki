@@ -1,0 +1,116 @@
+{
+    "type":"Consumíveis/Chaves:",
+    "itens":[
+        {
+            "name":"Frasco de Lágrimas Carmesins",
+            "img":"../img/itens/frasco_de_lagrimas_carmesins.png",
+            "ig-description":"Um frasco sagrado feito com base em um cálice dourado que já foi agraciado por uma lágrima da vida.<br><br>Enchido com lágrimas carmesins, esse Frasco recupera PV com o uso.<br>Descançe em um Ponto de Graça para reabastecer.<br><br>É dito que a Donzela dos Dedos irá conceder dois de tais cálices Frascos ao Manchado escolhido quando eles se encontrarem.",
+            "description":"Um dos frascos de recuperação do jogo, após uma curta animação ele restaura uma quantidade substancial dos PV do jogador. Para aumentar sua potência utilize Lágrimas Sagradas, para aumentar a quantidade utilize Sementes Douradas.",
+            "max-quantity":14,
+            "locations":[
+                "Automaticamente no inventário do jogador após o tutorial."
+            ],
+            "references":[
+                "Sementes Douradas",
+                "Lágrimas Sagradas"
+            ]
+        },
+        {
+            "name":"Frasco de Lágrimas Cerúleas",
+            "img":"../img/itens/frasco_de_lagrimas_ceruleas.png",
+            "ig-description":"Um frasco sagrado feito com base em um cálice dourado que já foi agraciado por uma lágrima da vida.<br><br>Enchido com lágrimas cerúleas, esse Frasco recupera PF com o uso.<br>Descançe em um Ponto de Graça para reabastecer.<br><br>É dito que a Donzela dos Dedos irá conceder dois de tais cálices Frascos ao Manchado escolhido quando eles se encontrarem.",
+            "description":"Um dos frascos de recuperação do jogo, após uma curta animação ele restaura uma quantidade substancial dos PF do jogador. Para aumentar sua potência utilize Lágrimas Sagradas, para aumentar a quantidade utilize Sementes Douradas.",
+            "max-quantity":14,
+            "locations":[
+                "Automaticamente no inventário do jogador após o tutorial."
+            ],
+            "references":[
+                "Sementes Douradas",
+                "Lágrimas Sagradas"
+            ]
+        },
+        {
+            "name":"Lágrima Sagrada",
+            "img":"../img/itens/lagrima_sagrada.png",
+            "ig-description":"Benção da Térvore, adorada nas igrejas de todas as terras; este é apenas um vestígio.<br><br>Aumenta a potência dos restaurativa dos Frascos Sagrados.<br>(Apenas pode ser usado após descançar em uma Graça.)<br><br>Durante a era da Térvore, essas lágrimas eram usadas para espalhar a fé, pois a deles já foi uma certa benção.",
+            "description":"Item utilizado para aumentar a potência dos frascos, os fazendo recuperar uma quantidade maior de PV e PF.<br>Para utiliza-la basta sentar em uma Graça, ir ao menu Frascos, e ir à opção Aumentar potência de Frasco.<br>O seu frasco pode ficar com uma potência máxima de +12.",
+            "max-quantity":0,
+            "locations":[
+                "Na região sul de Limgrave, do outro lado da Ponte do Sacrifício. A Igreja da Peregrinação está diretamente ao norte do símbolo da Erdtree no mapa. Dentro haverá uma Lágrima Sagrada.",
+                "A sudoeste da primeira lágrima acima está a Quarta Igreja de Marika. Aqui você encontrará outra Lágrima Sagrada.",
+                "A oeste da Graça chamada Castle Morne Rampart, há uma colina que você pode escalar. Alguns passos ao sul está a Igreja Batismal de Callu. A Lágrima Sagrada está em seu local habitual, mas cuidado com o exército de ratos lá dentro.",
+                "Muito perto da fronteira de Limgrave com Caelid está a Terceira Igreja de Marika.",
+                "Você o encontrará logo após derrotar Godrick o enxertado. Você está procurando a Igreja de Irith.",
+                "Ao norte da Academia de Raya Lucaria está a Igreja Bellum, do outro lado da estrada da entrada quebrada. Você provavelmente verá isso no caminho para o grande elevador de Dectus.",
+                "A leste da Igreja de Bellum e subindo as falésias está a Igreja da Inibição. Dentro há outra lágrima sagrada, mas você precisará passar pela Frenzy-Flaming Tower e pela Frenzy Flame Village para chegar lá.",
+                "Pegue o caminho para o norte da graça Altus Highway Junction. Você verá a Segunda Igreja de Marika no noroeste.",
+                "A nordeste do Sítio da Graça chamada Altus Highway Junction está a Igreja Stormcaller. Há uma lágrima sagrada dentro, mas para realmente chegar lá, você precisará se aproximar do norte por causa das bordas do penhasco ao lado.",
+                "Na Primeira Igreja de Marika, você encontrará outra Lágrima Sagrada. Este local está por trás da luta do chefe Borealis the Freezing Fog no final do lago congelado.",
+                "Diretamente a oeste do da Graça chamada Pé da Forja é a Igreja do Repouso. Aqui está outra lágrima sagrada, mas cuidado com a possível invasão de NPCs em sua entrada."
+            ],
+            "references":[
+                "Frasco de Lágrimas Carmesins",
+                "Frasco de Lágrimas Cerúleas"
+            ]
+        },
+        {
+            "name":"Sementes Douradas",
+            "img":"../img/itens/semente_dourada.png",
+            "ig-description":"Uma Semente Dourada, achada na base de uma árvore ilusória.<br><br>Aumenta o número de usos do Frasco Sagrado.<br>(Apenas pode ser usado após descançar em uma Graça.)<br><br>Quando o Elden Ring foi estilhaçado, essas sementes caíram da Térvore, espalhando-se pelas várias terras, como se a vida em si soubesse que o fim chegou.",
+            "description":"Item utilizado para aumentar a quantidade de utilização dos frascos.<br>Para utiliza-la basta sentar em uma Graça, ir ao menu Frascos, e ir à opção Aumentar quantidade de usos do Frasco.<br>O máximo de usos que o frasco pode ter são 14 com o custo de cada melhora seguindo os seguintes custos:<br>5/6 Frascos - 1 Semente cada;<br>7/8 Frascos - 2 Sementes cada;<br>9/10 Frascos - 3 Sementes cada;<br>11/12 Frascos - 4 Sementes cada;<br>13/14 Frascos - 5 Sementes cada.<br>No total são nescessárias 30 Sementes para o seu Frasco chegar na capacidade máxima.",
+            "max-quantity":0,
+            "locations":[
+                "Dropada pelo chefe “Ulcerated Tree Spirit” no fundo do “Fringefolk Hero’s Grave”. Você vai precisar de uma chave de pedra para chegar lá.",
+                "Depois de passar sob os portões em Stormgate e lutar contra os inimigos e os trolls lá, você subirá uma colina ao longo do caminho e chegará a uma clareira. À sua direita haverá uma árvore amarela brilhante. Abaixo dela estará a Semente Dourada.",
+                "À direita do forte na parte sul de Limgrave. A Semente Dourada é colocada sob uma árvore brilhante no campo. No mapa, esse local é chamado de Fort Haight.",
+                "Ao sul de uma graça perdida, chamada de Castle Morne Rampart, há uma plataforma rochosa à sua direita, fora do caminho principal para o castelo. Haverá também um inimigo alto atirando flechas em você à frente. Suba até a plataforma e reivindique a Semente Dourada.",
+                "Depois de ajudar Roderika e desbloqueá-la como comerciante em Roundtable Hold, retorne ao Stormhill Shack onde você a conheceu. Onde ela estava terá uma Semente Dourada.",
+                "Da graça perdida chamada Cela isolada, vire à esquerda descendo a escada e passe pelos inimigos lá. A Semente Dourada estará bem à sua frente, entre duas árvores maiores.",
+                "Abaixo do pátio do Castelo, aa Câmara ao lado, siga em direção ao pátio, vire à direita e desça nas profundezas nebulosas abaixo. mate os ratos e continue a cair em um abismo onde espera um minichefe. Derrote o chefe para tornar esta Semente Dourada sua.",
+                "Depois de ajudar Roderika no Stormhill Shack, ela irá para a mesa redonda. Fale com ela uma vez lá e ela lhe dará uma semente.",
+                "Na estrada que desce para o Castelo Redmane do outro lado da água. A árvore brilhante fica a sudeste do  Graça chamada de Caelid Highway South.",
+                "A sudeste do Santuário Bestial. Há uma chance de você ser teletransportado para este lugar, ou você pode simplesmente pegar a estrada de Limgrave.",
+                "Entre as ruínas de vários edifícios está uma árvore brilhante com a Semente Dourada embaixo. A oeste do ícone do portão da academia no mapa.",
+                "Logo após lutar contra o Lobo Vermelho de Radagon, você encontrará um pátio contendo muitas pequenas criaturas parecidas com caranguejos. Corra para a esquerda e abaixo da ponte e a árvore brilhante estará ao lado de alguns inimigos. Uma Semente Dourada estará ali.",
+                "Na Academia de Raya Lucaria, viaje rapidamente para o Portão Principal da Academia. Agora você vai querer seguir para nordeste ao longo do caminho quebrado. No final terá uma Semente Dourada.",
+                "No Caria Manor, no canto noroeste de Liurnia.",
+                "Abaixo, no leito do rio, a oeste do grande elevador de Dectus.",
+                "Logo a esquerda da graça ao norte do grande elevador de Dectus.",
+                "Ao norte da graça logo antes da ponte para a entrada da Capital Real.",
+                "Diretamente ao lado da graça chamada Outer Wall Phantom Tree.",
+                "Ao lado da graça que fica ao norte da Outer Wall Phantom Tree.",
+                "Na graça logo a baixo da Térvore do Monte Gleimir.",
+                "Logo após um chefe Demi-Humano no Monte Gleimir.",
+                "Ao sul da graça oeste da capital.",
+                "No caminho principal até o grande elevador de Rold. Você vai vê-la bem a sua direita.",
+                "Na Montanha dos Gigantes no Lago Congelado, siga para a direita e você verá um gigante aparecer. De onde veio, há uma árvore com uma Semente Dourada abaixo dela.",
+                "Da graça do templo do dragão, quando você chegar à mesma plataforma que o dragão, vire imediatamente à esquerda e suba a rocha ao lado. A Semente Dourada estará no centro desta área entre alguns escombros."
+            ],
+            "references":[
+                "Frasco de Lágrimas Carmesins",
+                "Frasco de Lágrimas Cerúleas"
+            ]
+        },
+        {
+            "name":"Chave de Espada de Pedra",
+            "img":"../img/itens/chave_de_espada_de_pedra.png",
+            "ig-description":"Uma chave com forma de uma espada de pedra.<br><br>Quebra os selos nas estátuas de diabinhos, mas fica presa na estátua após o uso, podendo apenas ser usada uma vez.<br><br>Pense bem antes de usar uma.",
+            "description":"É um item chave do jogo, muitos itens adicionais e muito úteis ficam atrás de selos que nescessitam desse item para desbloquear, apartir da metade do jogo muito fácilmente achado.",
+            "max-quantity":0,
+            "locations":[
+                "Grande quantidade achados pelo jogo todo, basta explorar o mapa e encontrar os itens.",
+                "Muitos mercadores vendem o item por uma média de 4000 Runas cada."
+            ],
+            "references":[]
+        }
+    ],
+    "template":{
+        "name":"",
+        "img":"",
+        "ig-description":"",
+        "description":"",
+        "max-quantity":0,
+        "locations":[],
+        "references":[]
+    }
+}
