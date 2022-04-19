@@ -194,6 +194,40 @@ export async function loadContent(file){
 					`;
 					card_info.innerHTML = finalDescription;
 				}
+				else if(cardsJson['type'] == 'Magias'){
+					let card_info = document.querySelector('.card-info');
+					card_info = card_info.querySelector('.text-medium');
+
+					let effect = `
+						<div class="effect">
+							<span class="inner-title">Efeito:</span><br>
+							${jsonInfo['effect']}
+						</div>
+					`;
+					let costSlots = `
+						<div class="cost-slots">
+							<span class="inner-title">Custo:</span>${jsonInfo['cost']}<br>
+							<span class="inner-title">Espaços nescessários:</span>${jsonInfo['slots']}<br>
+						</div>
+					`;
+					let requirements = `
+						<div class="requirements">
+							<span class="inner-title">Requisitos:</span><br>
+							<ul>
+								<li>Inteligência: ${jsonInfo['requirements']['intelligence']}</li>
+								<li>Fé: ${jsonInfo['requirements']['faith']}</li>
+								<li>Arcano: ${jsonInfo['requirements']['arcane']}</li>
+							</ul>
+						</div>
+					`;
+					
+					let finalDescription = `
+						${requirements}
+						${effect}
+						${costSlots}
+					`;
+					card_info.innerHTML = finalDescription;
+				}
 			});
 		});
 	}

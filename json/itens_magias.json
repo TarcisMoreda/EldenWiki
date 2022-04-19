@@ -21,6 +21,69 @@
             "references":[
                 
             ]
+        },
+        {
+            "name":"Lua Sombria da Ranni",
+            "img":"/img/itens/magias/lua_sombria_da_ranni.png",
+            "ig-description":"Feitiço lendário associado com a rainha Cariana.<br><br>Usa a pessoa como um recipiente para encarnar uma gelada, escura lua, então manda ela flutuando até inimigos. A lua sombria dissipa todos feitiços que entra em contato, e temporáriamente reduz a negação de dano mágico daqueles que são acertados.<br><br>A lua foi encontrada por uma jovem Ranni, conduzida pela mão de sua mãe, Rennala.<br>O que ela contemplou era gelada, escura e velada em mistério oculto.",
+            "description":"Uma versão melhor, porém mais barata que o Lua Cheia de Rannala, pois tem dano de gelo e redução de resistências inimigas.",
+            "type":"Feitiço da Lua Cheia",
+            "effect":"Encarna uma gelada, escura lua que flutua até inimigos.",
+            "cost":62,
+            "slots":2,
+            "requirements":{
+                "intelligence":68,
+                "faith":0,
+                "arcane":0
+            },
+            "locations":[
+                "Em um baú em Chelona's Rise, após avançar muito na quest de Ranni."
+            ],
+            "references":[
+                
+            ]
+        },
+        {
+            "name":"Lâmina de Fogo Sanguíneo",
+            "img":"/img/itens/magias/lamina_de_fogo_sanguineo.png",
+            "ig-description":"Um encantamento de Juramento de Sangue, criada pelo Lorde do Sangue.<br><br>Engulfa o armamento da mão direita com fogo sanguíneo.<br>Esse encantamento pode ser usado em movimento.<br><br>Depois de dar dano, o fogo sanguíneo continua a causar perda de sangue por um curto período.",
+            "description":"Faz a sua arma que tem sangramento causar mais sangramento, e causar mais dano base, grande sucesso.",
+            "type":"Encantamento de Sangue",
+            "effect":"Encanta a arma com fogo sanguíneo.",
+            "cost":20,
+            "slots":1,
+            "requirements":{
+                "intelligence":0,
+                "faith":12,
+                "arcane":10
+            },
+            "locations":[
+                "Dropado por um Escaravelho nordeste de Rose Church."
+            ],
+            "references":[
+                
+            ]
+        },
+        {
+            "name":"Lança de Raio Congelado",
+            "img":"/img/itens/magias/lanca_de_raio_congelado.png",
+            "ig-description":"Encantamento que canaliza o poder dos Soldados Meio-Dragão.<br><br>Cria uma lança de raio congelado e a perfura no chão. No impacto, a lança vai explodir em rastros de raios que se espalham para frente.<br><br>Os Meio-Dragão nasceram na Cidade Eterna, onde eles não conheceram o céu de verdade, nem raios de verdade. Ao invés disso, raio congelado foi sua arma.",
+            "description":"Quantas vezes eu vou ter que dizer que sangramento é roubado para alguém me lembrar que gelo também é roubado, muito desbalanceado kkkkkk.",
+            "type":"Encantamento do Culto do Dragão",
+            "effect":"Perfura com lança de raio congelado de cima.",
+            "cost":36,
+            "slots":1,
+            "requirements":{
+                "intelligence":0,
+                "faith":34,
+                "arcane":0
+            },
+            "locations":[
+                "Dropado pelo Soldado Meio-Dragão de Nokstella."
+            ],
+            "references":[
+                
+            ]
         }
     ],
     "categories":{
