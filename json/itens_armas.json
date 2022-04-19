@@ -1,0 +1,143 @@
+{
+	"type": "Armas",
+	"itens":[
+		{
+			"name":"Shamshir",
+			"img":"img/itens/armas/shamshir.png",
+			"ig-description":"Espada curva com uma lâmina fina de amplo tamanho. De peso leve apesar de seu tamanho largo, seus ataques cortantes vem em rápida sucessão.<br><br>Uma arma devastadoramente poderosa nas mãos de um espadachim talentoso.",
+			"description":"Uma arma que escala muito bem com destreza, sendo uma das espadas curvas mais fortes, porém contendo apenas uma para cada ciclo de NG.",
+			"type":"Espada Curva",
+			"attack":{
+				"physical": 108,
+				"magical": 0,
+				"fire": 0,
+				"lightning": 0,
+				"holy": 0,
+				"crit": 100
+			},
+			"guard":{
+				"physical": 42,
+				"magical": 31,
+				"fire": 31,
+				"lightning": 31,
+				"holy": 31,
+				"boost": 26
+			},
+			"scaling":{
+				"strength": "D",
+				"dexterity": "D",
+				"intelligence": "-",
+				"faith": "-",
+				"arcane": "-"
+			},
+			"requirements":{
+				"strength": 7,
+				"dexterity": 13,
+				"intelligence": 0,
+				"faith": 0,
+				"arcane": 0
+			},
+			"dmg-type":"Corte",
+			"ash": "Corte Giratório",
+			"upgrade":"Smithing Stones",
+			"weight":3.5,
+			"locations":[
+				"Em um corpo encontrado no fim de Highroad Cave, em uma plataforma após a cachoeira, sendo comido por um bando de morcegos."
+			],
+			"references":[]
+		},
+		{
+			"name":"Espada Curva do Carniceiro",
+			"img":"img/itens/armas/espada_curva_do_carniceiro.png",
+			"ig-description":"Uma espada curva única, dentado igual dentes de tubarão.<br>Arma carregada por saqueadores de corpos que infestam locais de velhas batalhas.<br><br>A lâmina é viscosa com sangue e coberta de cortes pesados, fazendo dela completamente irregular. A vida realmente pode ser sinistra.",
+			"description":"Uma ótima espada curva com ótima escala com destreza e com um bônus de 45 de sangramento, ótima para os casuais que utilizam apenas a coisa mais roubada do jogo.",
+			"type":"Espada Curva",
+			"attack":{
+				"physical": 105,
+				"magical": 0,
+				"fire": 0,
+				"lightning": 0,
+				"holy": 0,
+				"crit": 100
+			},
+			"guard":{
+				"physical": 40,
+				"magical": 30,
+				"fire": 30,
+				"lightning": 30,
+				"holy": 30,
+				"boost": 25
+			},
+			"scaling":{
+				"strength": "D",
+				"dexterity": "D",
+				"intelligence": "-",
+				"faith": "-",
+				"arcane": "-"
+			},
+			"requirements":{
+				"strength": 9,
+				"dexterity": 14,
+				"intelligence": 0,
+				"faith": 0,
+				"arcane": 0
+			},
+			"dmg-type":"Cortante",
+			"ash": "Corte Giratório",
+			"upgrade":"Smithing Stones",
+			"weight":3.5,
+			"locations":[
+				"Achada no Monte Gelmir, em um corpo próximo à um Descendente, após uma ponte de pedra."
+			],
+			"references":[]
+		}
+	],
+	"categories":[
+		"Espada Curva",
+		"Espada Colossal",
+		"Cajado Glintstone"
+	],
+    "template":{
+        "name":"",
+        "img":"",
+        "ig-description":"",
+        "description":"",
+		"type":"",
+		"attack":{
+			"physical": 0,
+			"magical": 0,
+			"fire": 0,
+			"lightning": 0,
+			"holy": 0,
+			"crit": 0
+		},
+		"guard":{
+			"physical": 0,
+			"magical": 0,
+			"fire": 0,
+			"lightning": 0,
+			"holy": 0,
+			"boost": 0
+		},
+		"scaling":{
+			"strength": "-",
+			"dexterity": "-",
+			"intelligence": "-",
+			"faith": "-",
+			"arcane": "-"
+		},
+		"requirements":{
+			"strength": 0,
+			"dexterity": 0,
+			"intelligence": 0,
+			"faith": 0,
+			"arcane": 0
+		},
+		"dmg-type":"",
+		"ash": "",
+		"upgrade":"",
+		"weight":0.0,
+        "locations":[],
+        "references":[]
+    }
+}

@@ -49,3 +49,7 @@ itens_armaduras.addEventListener('click', ()=>{
 	changePage('cards');
 	loadCards('itens_armaduras');
 });
+itens_armas.addEventListener('click', ()=>{
+	changePage('cards');
+	loadCards('itens_armas');
+});

@@ -17,9 +17,6 @@ async function loadCardsInternal(cards){
 	</div>
 	`;
 
-	let item_type = document.querySelector('.item-type');
-	item_type.innerHTML = cards['type'];
-
 	let cardHTML = [];
 	for (let category in cards['categories']){
 		cardHTML[cards['categories'][category]] = `
