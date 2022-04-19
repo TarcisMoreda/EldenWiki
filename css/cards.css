@@ -12,6 +12,11 @@
 	color: #fff;
 }
 
+.bottom-cut{
+	border-top: 1px #F2B263 solid;
+	border-bottom: 1px #F2B263 solid;
+}
+
 .text-medium{
 	font-size: 16px;
 	line-height: 20px;

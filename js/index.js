@@ -52,3 +52,6 @@ itens_armaduras.addEventListener('click', ()=>{
 itens_armas.addEventListener('click', ()=>{
 	changePageCard('itens_armas');
 });
+itens_magias.addEventListener('click', ()=>{
+	changePageCard('itens_magias');
+});

@@ -1,320 +1,334 @@
 {
-	"type": "Armas",
-	"itens":[
-		{
-			"name":"Shamshir",
-			"img":"img/itens/armas/shamshir.png",
-			"ig-description":"Espada curva com uma lâmina fina de amplo tamanho. De peso leve apesar de seu tamanho largo, seus ataques cortantes vem em rápida sucessão.<br><br>Uma arma devastadoramente poderosa nas mãos de um espadachim talentoso.",
-			"description":"Uma arma que escala muito bem com destreza, sendo uma das espadas curvas mais fortes, porém contendo apenas uma para cada ciclo de NG.",
-			"type":"Espada Curva",
-			"attack":{
-				"physical": 108,
-				"magic": 0,
-				"fire": 0,
-				"lightning": 0,
-				"holy": 0,
-				"crit": 100,
-				"sorcery": 0,
-				"incantation": 0
-			},
-			"passive":{
-				"bleed": 0,
-				"poison": 0,
-				"ice": 0,
-				"madness": 0
-			},
-			"guard":{
-				"physical": 42,
-				"magic": 31,
-				"fire": 31,
-				"lightning": 31,
-				"holy": 31,
-				"boost": 26
-			},
-			"scaling":{
-				"strength": "D",
-				"dexterity": "D",
-				"intelligence": "-",
-				"faith": "-",
-				"arcane": "-"
-			},
-			"requirements":{
-				"strength": 7,
-				"dexterity": 13,
-				"intelligence": 0,
-				"faith": 0,
-				"arcane": 0
-			},
-			"dmg-type":"Corte",
-			"ash": "Corte Giratório",
-			"upgrade":"Smithing Stones",
-			"weight":3.5,
-			"locations":[
-				"Em um corpo encontrado no fim de Highroad Cave, em uma plataforma após a cachoeira, sendo comido por um bando de morcegos."
-			],
-			"references":[]
-		},
-		{
-			"name":"Espada Curva do Carniceiro",
-			"img":"img/itens/armas/espada_curva_do_carniceiro.png",
-			"ig-description":"Uma espada curva única, dentado igual dentes de tubarão.<br>Arma carregada por saqueadores de corpos que infestam locais de velhas batalhas.<br><br>A lâmina é viscosa com sangue e coberta de cortes pesados, fazendo dela completamente irregular. A vida realmente pode ser sinistra.",
-			"description":"Uma ótima espada curva com ótima escala com destreza e com um bônus de 45 de sangramento, ótima para os casuais que utilizam apenas a coisa mais roubada do jogo.",
-			"type":"Espada Curva",
-			"attack":{
-				"physical": 105,
-				"magic": 0,
-				"fire": 0,
-				"lightning": 0,
-				"holy": 0,
-				"crit": 100,
-				"sorcery": 0,
-				"incantation": 0
-			},
-			"passive":{
-				"bleed": 45,
-				"poison": 0,
-				"ice": 0,
-				"madness": 0
-			},
-			"guard":{
-				"physical": 40,
-				"magic": 30,
-				"fire": 30,
-				"lightning": 30,
-				"holy": 30,
-				"boost": 25
-			},
-			"scaling":{
-				"strength": "D",
-				"dexterity": "D",
-				"intelligence": "-",
-				"faith": "-",
-				"arcane": "-"
-			},
-			"requirements":{
-				"strength": 9,
-				"dexterity": 14,
-				"intelligence": 0,
-				"faith": 0,
-				"arcane": 0
-			},
-			"dmg-type":"Cortante",
-			"ash": "Corte Giratório",
-			"upgrade":"Smithing Stones",
-			"weight":3.5,
-			"locations":[
-				"Achada no Monte Gelmir, em um corpo próximo à um Descendente, após uma ponte de pedra."
-			],
-			"references":[]
-		},
-		{
-			"name":"Espada Grande Real",
-			"img":"/img/itens/armas/espada_grande_real.png",
-			"ig-description":"Espada grande decorada com o estilo real Cariano. Arma favorita de Blaidd o Meio-Lobo.<br><br>Em rebeldia ao destino que ele nasceu para cumprir, Blaidd jurou servir mestre algum a não ser Ranni. Como prova a espada foi imbuida com uma feitiçaria fria no momento que o juramento foi feito.",
-			"description":"Espada de nosso grande companheiro Blaidd, com boa escala em força e inteligência, com dano extremamente alto.",
-			"type":"Espada Colossal",
-			"attack":{
-				"physical": 112,
-				"magic": 134,
-				"fire": 0,
-				"lightning": 0,
-				"holy": 0,
-				"crit": 100,
-				"sorcery": 0,
-				"incantation": 0
-			},
-			"passive":{
-				"bleed": 0,
-				"poison": 0,
-				"ice": 0,
-				"madness": 0
-			},
-			"guard":{
-				"physical": 55,
-				"magic": 63,
-				"fire": 44,
-				"lightning": 44,
-				"holy": 44,
-				"boost": 42
-			},
-			"scaling":{
-				"strength": "D",
-				"dexterity": "E",
-				"intelligence": "D",
-				"faith": "-",
-				"arcane": "-"
-			},
-			"requirements":{
-				"strength": 26,
-				"dexterity": 18,
-				"intelligence": 22,
-				"faith": 0,
-				"arcane": 0
-			},
-			"dmg-type":"Padrão",
-			"ash": "Investida do Lobo",
-			"upgrade":"Somber Smithing Stones",
-			"weight":20.0,
-			"locations":[
-				"No final da quest de Ranni em frente a Ranni's Rise, Blaidd estará lutando contra sua verdadeira natureza, perdendo essa batalha ele atacará o jogador, derrotando ele será dropado seu set e sua espada."
-			],
-			"references":[]
-		},
-		{
-			"name":"Starscourge Greatsword",
-			"img":"/img/itens/armas/starscourge_greatsword.png",
-			"ig-description":"Espadas curvas grandes empunhadas por General Radahn. Um par de armas decoradas com um símbolo de juba de leão.<br><br>Radahn ganhou renome considerável como o Starscourge em sua juventude, e é dito que durante esse tempo ele engravou as runas de gravidade nessas lâminas.",
-			"description":"Um par de espadas grandes extremamente poderosas com ótima escala em força e destreza, porém uma arma realmente difícil de se conseguir.",
-			"type":"Espada Colossal",
-			"attack":{
-				"physical": 129,
-				"magic": 83,
-				"fire": 0,
-				"lightning": 0,
-				"holy": 0,
-				"crit": 100,
-				"sorcery": 0,
-				"incantation": 0
-			},
-			"passive":{
-				"bleed": 0,
-				"poison": 0,
-				"ice": 0,
-				"madness": 0
-			},
-			"guard":{
-				"physical": 49,
-				"magic": 47,
-				"fire": 34,
-				"lightning": 34,
-				"holy": 34,
-				"boost": 42
-			},
-			"scaling":{
-				"strength": "D",
-				"dexterity": "D",
-				"intelligence": "E",
-				"faith": "-",
-				"arcane": "-"
-			},
-			"requirements":{
-				"strength": 38,
-				"dexterity": 12,
-				"intelligence": 15,
-				"faith": 0,
-				"arcane": 0
-			},
-			"dmg-type":"Padrão",
-			"ash": "Choro do Starcaller",
-			"upgrade":"Somber Smithing Stones",
-			"weight":20.0,
-			"locations":[
-				"Após derrotar General Radahn e pegar sua lembrança, leve à Enia na Tavola Redonda e troque-a pelas espadas."
-			],
-			"references":[]
-		},
-		{
-			"name":"Cajado Glintstone de Lusat",
-			"img":"/img/itens/armas/cajado_glintstone_de_lusat.png",
-			"ig-description":"Cajado do feiticeiro primevo Lusat. Apenas aqueles que viram o que fica além da sabedoria da pedra podem empunha-la.<br><br>Aumenta o poder de todas as feitiçarias, mas consome mais PF.",
-			"description":"O cajado mais poderoso do jogo, se considerar o softcap de inteligência e o cajado no +10, ele dará mais dano que qualquer outro cajado do jogo, até os especializados em certos tipos de feitiçaria.",
-			"type":"Cajado Glintstone",
-			"attack":{
-				"physical": 24,
-				"magic": 0,
-				"fire": 0,
-				"lightning": 0,
-				"holy": 0,
-				"crit": 100,
-				"sorcery": 179,
-				"incantation": 0
-			},
-			"passive":{
-				"bleed": 0,
-				"poison": 0,
-				"ice": 0,
-				"madness": 0
-			},
-			"guard":{
-				"physical": 25,
-				"magic": 15,
-				"fire": 15,
-				"lightning": 15,
-				"holy": 15,
-				"boost": 15
-			},
-			"scaling":{
-				"strength": "D",
-				"dexterity": "-",
-				"intelligence": "B",
-				"faith": "-",
-				"arcane": "-"
-			},
-			"requirements":{
-				"strength": 10,
-				"dexterity": 0,
-				"intelligence": 52,
-				"faith": 0,
-				"arcane": 0
-			},
-			"dmg-type":"Concussão",
-			"ash": "Sem habilidade",
-			"upgrade":"Somber Smithing Stone",
-			"weight":4.0,
-			"locations":[
-				"Em Selia, Cidade da Feitiçaria, em um baú norte ao chefe duplo de inimigos Nox, após derrota-los."
-			],
-			"references":[]
-		}
-	],
-	"categories":[
-		"Espada Curva",
-		"Espada Colossal",
-		"Cajado Glintstone"
-	],
+    "type":"Armas",
+    "itens":[
+        {
+            "name":"Shamshir",
+            "img":"img/itens/armas/shamshir.png",
+            "ig-description":"Espada curva com uma lâmina fina de amplo tamanho. De peso leve apesar de seu tamanho largo, seus ataques cortantes vem em rápida sucessão.<br><br>Uma arma devastadoramente poderosa nas mãos de um espadachim talentoso.",
+            "description":"Uma arma que escala muito bem com destreza, sendo uma das espadas curvas mais fortes, porém contendo apenas uma para cada ciclo de NG.",
+            "type":"Espada Curva",
+            "attack":{
+                "physical":108,
+                "magic":0,
+                "fire":0,
+                "lightning":0,
+                "holy":0,
+                "crit":100,
+                "sorcery":0,
+                "incantation":0
+            },
+            "passive":{
+                "bleed":0,
+                "poison":0,
+                "ice":0,
+                "madness":0
+            },
+            "guard":{
+                "physical":42,
+                "magic":31,
+                "fire":31,
+                "lightning":31,
+                "holy":31,
+                "boost":26
+            },
+            "scaling":{
+                "strength":"D",
+                "dexterity":"D",
+                "intelligence":"-",
+                "faith":"-",
+                "arcane":"-"
+            },
+            "requirements":{
+                "strength":7,
+                "dexterity":13,
+                "intelligence":0,
+                "faith":0,
+                "arcane":0
+            },
+            "dmg-type":"Corte",
+            "ash":"Corte Giratório",
+            "upgrade":"Smithing Stones",
+            "weight":3.5,
+            "locations":[
+                "Em um corpo encontrado no fim de Highroad Cave, em uma plataforma após a cachoeira, sendo comido por um bando de morcegos."
+            ],
+            "references":[
+                
+            ]
+        },
+        {
+            "name":"Espada Curva do Carniceiro",
+            "img":"img/itens/armas/espada_curva_do_carniceiro.png",
+            "ig-description":"Uma espada curva única, dentado igual dentes de tubarão.<br>Arma carregada por saqueadores de corpos que infestam locais de velhas batalhas.<br><br>A lâmina é viscosa com sangue e coberta de cortes pesados, fazendo dela completamente irregular. A vida realmente pode ser sinistra.",
+            "description":"Uma ótima espada curva com ótima escala com destreza e com um bônus de 45 de sangramento, ótima para os casuais que utilizam apenas a coisa mais roubada do jogo.",
+            "type":"Espada Curva",
+            "attack":{
+                "physical":105,
+                "magic":0,
+                "fire":0,
+                "lightning":0,
+                "holy":0,
+                "crit":100,
+                "sorcery":0,
+                "incantation":0
+            },
+            "passive":{
+                "bleed":45,
+                "poison":0,
+                "ice":0,
+                "madness":0
+            },
+            "guard":{
+                "physical":40,
+                "magic":30,
+                "fire":30,
+                "lightning":30,
+                "holy":30,
+                "boost":25
+            },
+            "scaling":{
+                "strength":"D",
+                "dexterity":"D",
+                "intelligence":"-",
+                "faith":"-",
+                "arcane":"-"
+            },
+            "requirements":{
+                "strength":9,
+                "dexterity":14,
+                "intelligence":0,
+                "faith":0,
+                "arcane":0
+            },
+            "dmg-type":"Cortante",
+            "ash":"Corte Giratório",
+            "upgrade":"Smithing Stones",
+            "weight":3.5,
+            "locations":[
+                "Achada no Monte Gelmir, em um corpo próximo à um Descendente, após uma ponte de pedra."
+            ],
+            "references":[
+                
+            ]
+        },
+        {
+            "name":"Espada Grande Real",
+            "img":"/img/itens/armas/espada_grande_real.png",
+            "ig-description":"Espada grande decorada com o estilo real Cariano. Arma favorita de Blaidd o Meio-Lobo.<br><br>Em rebeldia ao destino que ele nasceu para cumprir, Blaidd jurou servir mestre algum a não ser Ranni. Como prova a espada foi imbuida com uma feitiçaria fria no momento que o juramento foi feito.",
+            "description":"Espada de nosso grande companheiro Blaidd, com boa escala em força e inteligência, com dano extremamente alto.",
+            "type":"Espada Colossal",
+            "attack":{
+                "physical":112,
+                "magic":134,
+                "fire":0,
+                "lightning":0,
+                "holy":0,
+                "crit":100,
+                "sorcery":0,
+                "incantation":0
+            },
+            "passive":{
+                "bleed":0,
+                "poison":0,
+                "ice":0,
+                "madness":0
+            },
+            "guard":{
+                "physical":55,
+                "magic":63,
+                "fire":44,
+                "lightning":44,
+                "holy":44,
+                "boost":42
+            },
+            "scaling":{
+                "strength":"D",
+                "dexterity":"E",
+                "intelligence":"D",
+                "faith":"-",
+                "arcane":"-"
+            },
+            "requirements":{
+                "strength":26,
+                "dexterity":18,
+                "intelligence":22,
+                "faith":0,
+                "arcane":0
+            },
+            "dmg-type":"Padrão",
+            "ash":"Investida do Lobo",
+            "upgrade":"Somber Smithing Stones",
+            "weight":20.0,
+            "locations":[
+                "No final da quest de Ranni em frente a Ranni's Rise, Blaidd estará lutando contra sua verdadeira natureza, perdendo essa batalha ele atacará o jogador, derrotando ele será dropado seu set e sua espada."
+            ],
+            "references":[
+                
+            ]
+        },
+        {
+            "name":"Starscourge Greatsword",
+            "img":"/img/itens/armas/starscourge_greatsword.png",
+            "ig-description":"Espadas curvas grandes empunhadas por General Radahn. Um par de armas decoradas com um símbolo de juba de leão.<br><br>Radahn ganhou renome considerável como o Starscourge em sua juventude, e é dito que durante esse tempo ele engravou as runas de gravidade nessas lâminas.",
+            "description":"Um par de espadas grandes extremamente poderosas com ótima escala em força e destreza, porém uma arma realmente difícil de se conseguir.",
+            "type":"Espada Colossal",
+            "attack":{
+                "physical":129,
+                "magic":83,
+                "fire":0,
+                "lightning":0,
+                "holy":0,
+                "crit":100,
+                "sorcery":0,
+                "incantation":0
+            },
+            "passive":{
+                "bleed":0,
+                "poison":0,
+                "ice":0,
+                "madness":0
+            },
+            "guard":{
+                "physical":49,
+                "magic":47,
+                "fire":34,
+                "lightning":34,
+                "holy":34,
+                "boost":42
+            },
+            "scaling":{
+                "strength":"D",
+                "dexterity":"D",
+                "intelligence":"E",
+                "faith":"-",
+                "arcane":"-"
+            },
+            "requirements":{
+                "strength":38,
+                "dexterity":12,
+                "intelligence":15,
+                "faith":0,
+                "arcane":0
+            },
+            "dmg-type":"Padrão",
+            "ash":"Choro do Starcaller",
+            "upgrade":"Somber Smithing Stones",
+            "weight":20.0,
+            "locations":[
+                "Após derrotar General Radahn e pegar sua lembrança, leve à Enia na Tavola Redonda e troque-a pelas espadas."
+            ],
+            "references":[
+                
+            ]
+        },
+        {
+            "name":"Cajado Glintstone de Lusat",
+            "img":"/img/itens/armas/cajado_glintstone_de_lusat.png",
+            "ig-description":"Cajado do feiticeiro primevo Lusat. Apenas aqueles que viram o que fica além da sabedoria da pedra podem empunha-la.<br><br>Aumenta o poder de todas as feitiçarias, mas consome mais PF.",
+            "description":"O cajado mais poderoso do jogo, se considerar o softcap de inteligência e o cajado no +10, ele dará mais dano que qualquer outro cajado do jogo, até os especializados em certos tipos de feitiçaria.",
+            "type":"Cajado Glintstone",
+            "attack":{
+                "physical":24,
+                "magic":0,
+                "fire":0,
+                "lightning":0,
+                "holy":0,
+                "crit":100,
+                "sorcery":179,
+                "incantation":0
+            },
+            "passive":{
+                "bleed":0,
+                "poison":0,
+                "ice":0,
+                "madness":0
+            },
+            "guard":{
+                "physical":25,
+                "magic":15,
+                "fire":15,
+                "lightning":15,
+                "holy":15,
+                "boost":15
+            },
+            "scaling":{
+                "strength":"D",
+                "dexterity":"-",
+                "intelligence":"B",
+                "faith":"-",
+                "arcane":"-"
+            },
+            "requirements":{
+                "strength":10,
+                "dexterity":0,
+                "intelligence":52,
+                "faith":0,
+                "arcane":0
+            },
+            "dmg-type":"Concussão",
+            "ash":"Sem habilidade",
+            "upgrade":"Somber Smithing Stone",
+            "weight":4.0,
+            "locations":[
+                "Em Selia, Cidade da Feitiçaria, em um baú norte ao chefe duplo de inimigos Nox, após derrota-los."
+            ],
+            "references":[
+                
+            ]
+        }
+    ],
+    "categories":[
+        "Espada Curva",
+        "Espada Colossal",
+        "Cajado Glintstone"
+    ],
     "template":{
         "name":"",
         "img":"",
         "ig-description":"",
         "description":"",
-		"type":"",
-		"attack":{
-			"physical": 0,
-			"magic": 0,
-			"fire": 0,
-			"lightning": 0,
-			"holy": 0,
-			"crit": 0,
-			"sorcery": 0,
-			"incantation": 0
-		},
-		"guard":{
-			"physical": 0,
-			"magic": 0,
-			"fire": 0,
-			"lightning": 0,
-			"holy": 0,
-			"boost": 0
-		},
-		"scaling":{
-			"strength": "-",
-			"dexterity": "-",
-			"intelligence": "-",
-			"faith": "-",
-			"arcane": "-"
-		},
-		"requirements":{
-			"strength": 0,
-			"dexterity": 0,
-			"intelligence": 0,
-			"faith": 0,
-			"arcane": 0
-		},
-		"dmg-type":"",
-		"ash": "",
-		"upgrade":"",
-		"weight":0.0,
-        "locations":[],
-        "references":[]
+        "type":"",
+        "attack":{
+            "physical":0,
+            "magic":0,
+            "fire":0,
+            "lightning":0,
+            "holy":0,
+            "crit":0,
+            "sorcery":0,
+            "incantation":0
+        },
+        "guard":{
+            "physical":0,
+            "magic":0,
+            "fire":0,
+            "lightning":0,
+            "holy":0,
+            "boost":0
+        },
+        "scaling":{
+            "strength":"-",
+            "dexterity":"-",
+            "intelligence":"-",
+            "faith":"-",
+            "arcane":"-"
+        },
+        "requirements":{
+            "strength":0,
+            "dexterity":0,
+            "intelligence":0,
+            "faith":0,
+            "arcane":0
+        },
+        "dmg-type":"",
+        "ash":"",
+        "upgrade":"",
+        "weight":0.0,
+        "locations":[
+            
+        ],
+        "references":[
+            
+        ]
     }
 }

@@ -1,0 +1,57 @@
+{
+    "type":"Magias",
+    "itens":[
+        {
+            "name":"Cometa Azur",
+            "img":"img/itens/magias/cometa_azur.png",
+            "ig-description":"Feitiço lendário criado por Azur, feiticeiro primevo.<br><br>Lança um tremendo cometa em uma torrente parecida com a expansão estelar distante, o lugar dito ser a origem de glintstone.<br>Segure para continuar a soltar o poder da feitiçaria.<br><br>Quando Azur olhou para a corrente primeva, ele viu escuridão. Ele ficou tanto enfeitiçado quanto aterrorizado pelo abismo.",
+            "description":"Kamehamehaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+            "type":"Feitiço Primeval",
+            "effect":"Lança um cometa dentro de uma torrente de estrelas.",
+            "cost":40,
+            "slots":3,
+            "requirements":{
+                "intelligence":60,
+                "faith":0,
+                "arcane":0
+            },
+            "locations":[
+                "Hermit Village no Monte Gelmir, adquirido do Feiticeiro Primevo Azur perto de um penhasco."
+            ],
+            "references":[
+                
+            ]
+        }
+    ],
+    "categories":{
+        "Feitiços":[
+            "Feitiço Primeval",
+            "Feitiço da Lua Cheia"
+        ],
+        "Encantamentos":[
+            "Encantamento de Sangue",
+            "Encantamento do Culto do Dragão"
+        ]
+    },
+    "template":{
+        "name":"",
+        "img":"",
+        "ig-description":"",
+        "description":"",
+        "type":"",
+        "effect":"",
+        "cost":0,
+        "slots":0,
+        "requirements":{
+            "intelligence":0,
+            "faith":0,
+            "arcane":0
+        },
+        "locations":[
+            
+        ],
+        "references":[
+            
+        ]
+    }
+}

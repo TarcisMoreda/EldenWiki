@@ -19,10 +19,24 @@ export async function loadCards(file){
 	`;
 
 	let cardHTML = [];
-	for (let category in cards['categories']){
-		cardHTML[cards['categories'][category]] = `
-		<div class="item-type">${cards['categories'][category]}:</div>
-		<section class="cards">`;
+	if (typeof cards['categories'][0] === 'string'){
+		for (let category in cards['categories']){
+			cardHTML[cards['categories'][category]] = `
+			<div class="item-type bottom-cut">${cards['categories'][category]}:</div>
+			<section class="cards">`;
+		}
+	}
+	else{
+		for (let category in cards['categories']){
+			cardHTML[cards['categories'][category]] = `
+			<div class="item-type bottom-cut">${category}:</div>`;
+
+			for (let subcategory in cards['categories'][category]){
+				cardHTML[cards['categories'][category][subcategory]] = `
+				<div class="item-type">${cards['categories'][category][subcategory]}:</div>
+				<section class="cards">`;
+			}
+		}
 	}
 
 

@@ -106,7 +106,9 @@
                 "Grande quantidade achados pelo jogo todo, basta explorar o mapa e encontrar os itens.",
                 "Muitos mercadores vendem o item por uma média de 4000 Runas cada."
             ],
-            "references":[]
+            "references":[
+                
+            ]
         }
     ],
     "categories":[
@@ -119,7 +121,11 @@
         "ig-description":"",
         "description":"",
         "max-quantity":0,
-        "locations":[],
-        "references":[]
+        "locations":[
+            
+        ],
+        "references":[
+            
+        ]
     }
 }
