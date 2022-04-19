@@ -63,6 +63,12 @@
 	border-color: #F2B263;
 }
 
+.card-title{
+	margin-bottom: 20px;
+	font-size: 22px;
+	font-weight: 500;
+}
+
 .card-image-container{
 	width: 100%;
 	display: flex;
@@ -95,7 +101,8 @@
 
 .inner-title{
 	color: #F2B263;
-	font-size: 22px;
+	font-size: 18px;
+	margin-bottom: 10px;
 	font-weight: 500;
 }
 

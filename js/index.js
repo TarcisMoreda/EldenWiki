@@ -1,5 +1,6 @@
 import {navSetup} from './navbar.js';
 import {loadCards} from './cards.js';
+import {loadContent} from './content.js';
 
 /*
 Esse arquivo é o arquivo principal do projeto.
@@ -12,8 +13,6 @@ let itens_consumiveis = document.querySelector('.itens-consumiveis');
 let itens_armaduras = document.querySelector('.itens-armaduras');
 let itens_armas = document.querySelector('.itens-armas');
 let itens_magias = document.querySelector('.itens-magias');
-let itens_ashes = document.querySelector('.itens-ashes');
-let itens_spirits = document.querySelector('.itens-spirits');
 
 let personagens = document.querySelector('.personagens');
 
@@ -30,6 +29,9 @@ async function changePage(page){
 	content.innerHTML = await fetch(`./html/${page}.html`).then(res => res.text());
 	return;
 }
+function changePageCard(content){
+	changePage('cards').then(loadCards(content).then(loadContent(content)))
+}
 
 addEventListener('load', ()=>{
 	navSetup();
@@ -42,14 +44,11 @@ logo.addEventListener('click', ()=>{
 	changePage('home');
 });
 itens_consumiveis.addEventListener('click', ()=>{
-	changePage('cards');
-	loadCards('itens_consumiveis');
+	changePageCard('itens_consumiveis');
 });
 itens_armaduras.addEventListener('click', ()=>{
-	changePage('cards');
-	loadCards('itens_armaduras');
+	changePageCard('itens_armaduras');
 });
 itens_armas.addEventListener('click', ()=>{
-	changePage('cards');
-	loadCards('itens_armas');
+	changePageCard('itens_armas');
 });

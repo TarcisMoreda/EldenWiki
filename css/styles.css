@@ -9,6 +9,7 @@
 	font-family: 'Cormorant Garamond', serif;
 	margin: 0;
 	padding: 0;
+	list-style-position: inside;
 	box-sizing: border-box;
 }
 
