@@ -93,14 +93,14 @@ export async function loadContentItem(cardsJson){
 						</ul><br>
 					</div>
 				`;
-				let peso = `
+				let weight = `
 					<span class="inner-title">Peso:</span> ${jsonInfo['weight']}
 				`;
 
 				let finalDescription = `
-				${dmgNegation}
+					${dmgNegation}
 					${resistances}
-					${peso}
+					${weight}
 				`;
 				card_info.innerHTML = finalDescription;
 			}

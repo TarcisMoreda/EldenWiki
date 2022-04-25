@@ -4,13 +4,12 @@
 #############################################################################
 */
 .content{
-	display: grid;
+	display: flex;
 	gap: 10px;
-	grid-template-columns: repeat(4, 1fr);
-	grid-auto-rows: 1fr;
 }
 
 .logo-wrapper{
+	flex-basis: 40%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -18,7 +17,7 @@
 }
 
 #game-logo{
-	width: 90%;
+	width: 100%;
 	height: auto;
 	aspect-ratio: 1/1;
 	background-image: url(../img/logo.png);
@@ -38,9 +37,8 @@
 	text-decoration: none;
 	font-size: x-large;
 	font-weight: 500;
-	white-space: nowrap;
-	overflow: auto;
-	overflow-wrap: break-word;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 #welcome span{
@@ -49,26 +47,9 @@
 	line-height: normal;
 }
 
-.grid-image{
-	grid-row: span 2/auto;
-	grid-column: span 2/auto;
-}
-
-.grid-text{
-	grid-column: span 2/auto;
-}
-
 @media screen and (orientation: portrait),
 screen and (max-width: 910px){
 	.content{
-		grid-template-columns: auto;
-	}
-	
-	.grid-image{
-		grid-column: auto;
-	}
-	
-	.grid-text{
-		grid-column: auto;
+		flex-direction: column;
 	}
 }

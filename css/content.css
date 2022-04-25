@@ -1,9 +1,26 @@
+/*
+#############################################################################
+#							Estilo geral da página							#
+#############################################################################
+*/
 .content{
 	display: flex;
 	gap: 10px;
 	padding: 10px 50px;
 	font-size: 16px;
 	font-weight: 300;
+}
+
+/*
+#############################################################################
+#					Estilo da página de itens/personagens					#
+#############################################################################
+*/
+.itens,
+.personagens,
+.inimigos{
+	display: flex;
+	gap: 10px;
 }
 
 .left,
@@ -88,7 +105,7 @@
 	border-radius: 10px;
 }
 
-img{
+.card-image img{
 	display: block;
 	width: 100%;
 	height: auto;
@@ -122,8 +139,18 @@ img{
 	border-bottom: #F2B263 solid 1px;
 }
 
-@media screen and (max-width: 910px){
-	.content{
+@media screen and (orientation: portrait),
+screen and (max-width: 910px){
+	.itens,
+	.personagens,
+	.inimigos{
 		flex-direction: column-reverse;
 	}
 }
+
+/*
+#############################################################################
+#							Estilo da página de guia						#
+#############################################################################
+*/
+.guia{}
