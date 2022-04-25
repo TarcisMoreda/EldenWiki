@@ -79,13 +79,19 @@
 .card-image{
 	width: 100%;
 	height: auto;
-	aspect-ratio: 1/1;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #96A694;
 	border-bottom: 1px solid;
 	border-color: #F2B263;
+	border-radius: 10px;
+}
+
+img{
+	display: block;
+	width: 100%;
+	height: auto;
 	border-radius: 10px;
 }
 

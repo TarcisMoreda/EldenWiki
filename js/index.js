@@ -1,6 +1,5 @@
 import {navSetup} from './navbar.js';
-import {loadCards} from './cards.js';
-import {loadContent} from './content.js';
+import {loadCardsCharacter, loadCardsItem} from './cards.js';
 
 /*
 Esse arquivo é o arquivo principal do projeto.
@@ -24,13 +23,20 @@ let guia_online = document.querySelector('.guia-online');
 let guia_finais = document.querySelector('.guia-finais');
 let guia_ngplus = document.querySelector('.guia-ngplus');
 
-async function changePage(page){
+async function changePage(page, pageContent){
 	let content = document.querySelector('.content');
 	content.innerHTML = await fetch(`./html/${page}.html`).then(res => res.text());
+
+	if(page === 'cards'){
+		if(pageContent.split('_')[0] === 'itens'){
+			loadCardsItem(pageContent);
+		}
+		else if(pageContent === 'personagens'){
+			loadCardsCharacter(pageContent);
+		}
+	}
+
 	return;
-}
-function changePageCard(content){
-	changePage('cards').then(loadCards(content).then(loadContent(content)))
 }
 
 addEventListener('load', ()=>{
@@ -44,14 +50,17 @@ logo.addEventListener('click', ()=>{
 	changePage('home');
 });
 itens_consumiveis.addEventListener('click', ()=>{
-	changePageCard('itens_consumiveis');
+	changePage('cards', 'itens_consumiveis');
 });
 itens_armaduras.addEventListener('click', ()=>{
-	changePageCard('itens_armaduras');
+	changePage('cards', 'itens_armaduras');
 });
 itens_armas.addEventListener('click', ()=>{
-	changePageCard('itens_armas');
+	changePage('cards', 'itens_armas');
 });
 itens_magias.addEventListener('click', ()=>{
-	changePageCard('itens_magias');
+	changePage('cards', 'itens_magias');
+});
+personagens.addEventListener('click', ()=>{
+	changePage('cards', 'personagens');
 });

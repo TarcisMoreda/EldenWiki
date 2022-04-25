@@ -1,0 +1,46 @@
+{
+	"type":"Personagens",
+	"personagens":[
+		{
+			"name":"Melina",
+			"dialogue":"Eu sou Melina.<br>Eu te ofereço um acordo.",
+			"description":"Melina é um NPC essencial, ela pede ajuda para o jogador para chegar ao pé da Térvore, em troca ela faz o papel de uma Dama, tornando suas runas em força.<br><br>Melina também é uma personagem muito misteriosa que não dá muitas pistas sobre seu passado, apenas falando que nasceu no pé da Térvore.<br><br>Ela também lembra o jogador que dele não tem damas na vida dele.",
+			"img":"/img/personagens/NPCs/melina.jpg",
+			"type":"Távola Redonda",
+			"locations":[
+				"Ela aparecerá em várias Graças pelo mapa, mesmo que tecnicamente ela sempre esteja junto do jogador."
+			],
+			"references":[
+	
+			],
+			"quest":[
+				"Melina aparece para o jogador oferecendo um acordo para o jogador levar ela até o pé da Térvore, em troca ela fará o papel de uma Dama, tornando suas runas em níveis.",
+				"Durante esse tempo Melina aparecerá muitas vezes durante o jogo, passando para o jogador ecos da Rainha Marika, que são mensagens deixadas em certos locais.",
+				"Quando o jogador chega na capital real, Melina aparece mais uma vez e agradece o jogador por ter levado ela até esse ponto, e que dentro da capital ela consegue se mover livremente.",
+				"Ao chegar na luta contra Morgott, um pouco atrás da porta do chefe tem um sinal de invocação que permite ao jogador invocar Melina para ajudar a derrotar o chefe. (Opicional)",
+				"Após derrotar Morgott e ver que a Térvore tem espinhos bloqueando o caminho para seu interior, Melina aparece novamente chamando o jogador para uma nova jornada, até a Chama dos Gigantes, que possibilitará ela a queimar a Térvore, possibilitando a entrada do jogador.",
+				"Chegando na Chama, Melina aparece e pergunta se o jogador está pronto para cometer um pecado capital, ao concordar Melina coloca a Térvore em chamas, se sacrificando no processo.",
+				"Caso o jogador tenha recebido a Chama da Loucura, será possível colocar fogo na Térvore sem sacrifícios, porém Melina odiará o jogador e sumirá do jogo. Nesse caso após a cutscene do final do jogo, uma cena extra aparece com Melina jurando que irá matar o jogador, após ele virar o Lorde do Caos."
+			]
+		}
+	],
+	"categories":[
+		"Távola Redonda"
+	],
+	"template":{
+		"name":"",
+		"dialogue":"",
+		"description":"",
+		"image":"",
+		"type":"",
+		"locations":[
+
+		],
+		"references":[
+
+		],
+		"quest":[
+			
+		]
+	}
+}
