@@ -7,8 +7,8 @@
 	display: flex;
 	gap: 10px;
 	padding: 10px 50px;
-	font-size: 16px;
-	font-weight: 300;
+	font-size: 20px;
+	font-weight: 500;
 }
 
 /*
@@ -16,12 +16,6 @@
 #					Estilo da página de itens/personagens					#
 #############################################################################
 */
-.itens,
-.personagens,
-.inimigos{
-	display: flex;
-	gap: 10px;
-}
 
 .left,
 .right{
@@ -29,19 +23,27 @@
 	flex-direction: column;
 	width: 100%;
 	height: auto;
-	justify-content: center;
 	gap: 10px;
 }
 
 .left{
-	flex-basis: 70%;
+	flex-basis: 75%;
 	justify-content: flex-start;
 }
 
 .right{
-	flex-basis: 30%;
+	flex-basis: 25%;
 	align-items: center;
 	justify-content: flex-start;
+}
+
+.arrow{
+	width: 22px;
+	font-size: 16px;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	transition: all 0.3s ease;
 }
 
 .ig-description{
@@ -52,22 +54,18 @@
 	border-color: #F2B263;
 	border-radius: 10px;
 	font-weight: 100;
-	font-size: 16px;
 	font-style: italic;
 	background-color: #18403C;
 }
 
 .title{
-	font-size: 22px;
+	font-size: 30px;
 	font-weight: 500;
 	color: #F2B263;
 }
 
 .text-medium{
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: 400;
-	color: #fff;
+	line-height: 24px;
 }
 
 .item-card{
@@ -82,7 +80,7 @@
 
 .card-title{
 	margin-bottom: 20px;
-	font-size: 22px;
+	font-size: 26px;
 	font-weight: 500;
 }
 
@@ -90,7 +88,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .card-image{
@@ -153,4 +151,3 @@ screen and (max-width: 910px){
 #							Estilo da página de guia						#
 #############################################################################
 */
-.guia{}

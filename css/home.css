@@ -31,25 +31,25 @@
 }
 
 #welcome{
-	padding: 10px;
-	height: 100%;
+	display: flex;
+	align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+	width: 100%;
+	height: auto;
+	flex-basis: 60%;
 	color: #fff;
 	text-decoration: none;
 	font-size: x-large;
 	font-weight: 500;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
-
-#welcome span{
-	display: inline-block;
-	vertical-align: middle;
-	line-height: normal;
 }
 
 @media screen and (orientation: portrait),
 screen and (max-width: 910px){
 	.content{
 		flex-direction: column;
+	}
+	#welcome{
+		justify-content: flex-start;
 	}
 }

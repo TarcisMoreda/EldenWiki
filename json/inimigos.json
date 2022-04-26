@@ -1,0 +1,113 @@
+{
+	"type":"Inimigos:",
+	"Comuns":[
+		{
+			"name":"Jarra Viva",
+			"dialogue":"Uma criatura estranha com formato de jarra com bracos e pernas. Elas vêm em vários tamanhos, e estão muitas vezes assentadas, até que um inimigo se aproxime demais. Os variantes maiores são mais perigosos do que os menores.",
+			"description":"Também são conhecidos como Soljarros(Soldjars).<br>POT BOOOOOOOOOOYS, LET'S FUCKING GOOOOOO!",
+			"strategies":[
+				"Mano, é um pote",
+				"O pequeno é só atacar",
+				"O grande é só tomar cuidado com o ataque beyblade"
+			],
+			"img":"/img/inimigos/comuns/jarra-viva.jpg",
+			"drops":[
+				"Fragmento de Jarra Viva.",
+				"Bolinho de carne crua"
+			],
+			"locations":[
+				"Castelo Stormveil",
+				"Academia de Raya Lucaria",
+				"Mansão Caria",
+				"Catacumba da Montanha dos Gigantes",
+				"Tumba Auriza",
+				"Jarro Burgo"
+			]
+		}
+	],
+	"Chefes":[
+		{
+			"name":"Starscourge Radahn",
+			"dialogue":"O famoso General Leão Vermelho foi reduzido à uma besta sem mente, devorando corpos nas dunas.<br>Usa magia gravitacional com extrema habilidade junto com sua tremenda forca, ganhando seu título de Starscourge.",
+			"description":"O semi-deus mais poderoso, Starscourge Radahn, General Radahn, General Chadahn, chame-o como quiser, ele é foda, quando mais novo ele adorava montar em seu cavalo, mas quando mais velho ele ficou muito grande, e seu cavalo sempre foi muito fraco, então como um macho alfa ele aprendeu e virou mestre em magia gravitacional para poder continuar a montar Leonard e sentir a glória da batalha.<br> Após sua batalha contra Malenia, ela precisou usar uma bomba de podridão escarlate e ainda assim não conseguiu matar essa máquinha, até depois de perder sua sanidade ele continua montado em Leonard e usa sua magia gravitacional para segurar um asteróide gigante de cair na terra.<br>Seus súditos tem tanto respeito a ele que fazem um festival em esperança de que ele possa morrer gloriosamente em batalha.",
+			"strategies":[
+				"Chore",
+				"Você pode usar o cavalo durante essa luta",
+				"O ataque de onda pode ser fácilmente pulado ao invés de rolado.",
+				"Quando ele entrar na segunda fase da luta ele pulará para a atmosfera e cairá igual um meteoro, muito cuidado, nesse ponto do jogo é um provável IK."
+			],
+			"img":"img/inimigos/chefes/radahn.png",
+			"hp":9572,
+			"resistances":[
+				"Sagrado",
+				"Outros efeitos de status"
+			],
+			"weaknesses":[
+				"Penetração",
+				"Magia",
+				"Fogo",
+				"Raio",
+				"Podridão Escarlate"
+			],
+			"summons":[
+				"Blaidd",
+				"Alexander Punho de Ferro",
+				"Patches",
+				"Dedo Sangrento Okina",
+				"Lionel o Coração de Ferro",
+				"Dama do Dedo Therolina"
+			],
+			"worldChanges":[
+				"O meteoro que ele estava segurando irá cair, revelando a entrada para Nokron",
+				"Ranni irá aparecer em sua torre caso ainda não esteja lá"
+			],
+			"drops":[
+				"70.000 Runas",
+				"Lembrança de Starscourge",
+				"Grande Runa de Radahn"
+			],
+			"locations":[
+				"Ele fica no Castelo Redmane em Caelid."
+			]
+		}
+	],
+	"templates":[
+		{
+			"name":"",
+			"dialogue":"",
+			"description":"",
+			"img":"",
+			"drops":[
+
+			],
+			"locations":[
+
+			]
+		},
+		{
+			"name":"",
+			"dialogue":"",
+			"description":"",
+			"img":"",
+			"hp":0,
+			"resistances":[
+
+			],
+			"weaknesses":[
+
+			],
+			"summons":[
+
+			],
+			"worldChanges":[
+
+			],
+			"drops":[
+
+			],
+			"locations":[
+
+			]
+		}
+	]
+}

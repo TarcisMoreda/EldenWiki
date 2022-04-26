@@ -10,7 +10,13 @@ async function changePageContentCharacter(){
 	return;
 }
 
-export async function loadContentItem(cardsJson){
+async function changePageContentEnemy(){
+	let content = document.querySelector('.content');
+	content.innerHTML = await fetch(`./html/contentEnemy.html`).then(res => res.text());
+	return;
+}
+
+export function loadContentItem(cardsJson){
 	let cards = document.querySelectorAll('.card');
 	
 	for(let i=0; i<cards.length; i++){
@@ -252,66 +258,142 @@ export async function loadContentItem(cardsJson){
 	return;
 }
 
-					export async function loadContentCharacters(cardsJson){
-						let cards = document.querySelectorAll('.card');
-					
-						for(let i=0; i<cards.length; i++){
-							let card = cards[i];
-							let jsonInfo = cardsJson['personagens'][i];
-					
-							card.addEventListener('click', async () => {
-								await changePageContentCharacter();
-					
-								let card_title = document.querySelector('.card-title');
-								let description = document.querySelector('.description');
-								let dialogue = document.querySelector('.dialogue');
-								let locations = document.querySelector('.locations');
-								let quests = document.querySelector('.quest');
-								let references = document.querySelector('.references');
-								let card_image = document.querySelector('.card-image');
-					
-								card_title.innerHTML = jsonInfo['name'];
-								description.innerHTML = jsonInfo['description'];
-								dialogue.innerHTML = jsonInfo['dialogue'];
-					
-								let tempHTML = '';
-								tempHTML += "<ul>";
-								for(let j=0; j<jsonInfo['locations'].length; j++){
-									let location = jsonInfo['locations'][j];
-									tempHTML += `<li>${location}</li>`;
-								}
-								tempHTML += "</ul>";
-								locations.innerHTML = tempHTML;
-					
-								tempHTML = '';
-								tempHTML += "<ul>";
-								if(jsonInfo['references'].length > 0){
-									for(let j=0; j<jsonInfo['references'].length; j++){
-										let reference = jsonInfo['references'][j];
-										tempHTML += `<li>${reference}</li>`;
-									}
-								}
-								else{
-									tempHTML += '<li>Nenhum item referenciado.</li>';
-								}
-								tempHTML += "</ul>";
-								references.innerHTML = tempHTML;
-					
-								tempHTML = '';
-								tempHTML += "<ul>";
-								if(jsonInfo['quest'].length > 0){
-									for(let j=0; j<jsonInfo['quest'].length; j++){
-										let quest = jsonInfo['quest'][j];
-										tempHTML += `<li>${quest}</li>`;
-									}
-								}
-								else{
-									tempHTML += '<li>Nada referenciado.</li>';
-								}
-								tempHTML += "</ul>";
-								quests.innerHTML = tempHTML;
-					
-								card_image.innerHTML = `<img src="${jsonInfo['img']}" alt="${jsonInfo['name']}">`;
-							});
-						}
+export function loadContentCharacters(cardsJson){
+	let cards = document.querySelectorAll('.card');
+
+	for(let i=0; i<cards.length; i++){
+		let card = cards[i];
+		let jsonInfo = cardsJson['personagens'][i];
+
+		card.addEventListener('click', async () => {
+			await changePageContentCharacter();
+
+			let card_title = document.querySelector('.card-title');
+			let description = document.querySelector('.description');
+			let dialogue = document.querySelector('.dialogue');
+			let locations = document.querySelector('.locations');
+			let quests = document.querySelector('.quest');
+			let references = document.querySelector('.references');
+			let card_image = document.querySelector('.card-image');
+
+			card_title.innerHTML = jsonInfo['name'];
+			card_title.style.margin = '0 0 0 0';
+			description.innerHTML = jsonInfo['description'];
+			dialogue.innerHTML = jsonInfo['dialogue'];
+
+			let tempHTML = '';
+			tempHTML += "<ul>";
+			for(let j=0; j<jsonInfo['locations'].length; j++){
+				let location = jsonInfo['locations'][j];
+				tempHTML += `<li>${location}</li>`;
+			}
+			tempHTML += "</ul>";
+			locations.innerHTML = tempHTML;
+
+			tempHTML = '';
+			tempHTML += "<ul>";
+			if(jsonInfo['references'].length > 0){
+				for(let j=0; j<jsonInfo['references'].length; j++){
+					let reference = jsonInfo['references'][j];
+					tempHTML += `<li>${reference}</li>`;
+				}
+			}
+			else{
+				tempHTML += '<li>Nenhum item referenciado.</li>';
+			}
+			tempHTML += "</ul>";
+			references.innerHTML = tempHTML;
+
+			tempHTML = '';
+			tempHTML += "<ul>";
+			if(jsonInfo['quest'].length > 0){
+				for(let j=0; j<jsonInfo['quest'].length; j++){
+					let quest = jsonInfo['quest'][j];
+					tempHTML += `<li>${quest}</li>`;
+				}
+			}
+			else{
+				tempHTML += '<li>Nada referenciado.</li>';
+			}
+			tempHTML += "</ul>";
+			quests.innerHTML = tempHTML;
+
+			card_image.innerHTML = `<img src="${jsonInfo['img']}" alt="${jsonInfo['name']}">`;
+		});
+	}
+}
+
+export function loadContentGuide(file){
+	return;
+}
+
+export function loadContentEnemies(cardsJson, type){
+	let cards = document.querySelectorAll('.card');
+
+	for(let i=0; i<cards.length; i++){
+		let card = cards[i];
+		let jsonInfo = cardsJson[type][i];
+
+		card.addEventListener('click', async () => {
+			await changePageContentEnemy();
+
+			let card_title = document.querySelector('.card-title');
+			let description = document.querySelector('.description');
+			let dialogue = document.querySelector('.ig-description');
+			let locations = document.querySelector('.locations');
+			let world = null;
+			let strategies = document.querySelector('.strategies');
+			let card_image = document.querySelector('.card-image');
+
+			card_title.innerHTML = jsonInfo['name'];
+			card_title.style.margin = '0 0 0 0';
+			description.innerHTML = jsonInfo['description'];
+			dialogue.innerHTML = jsonInfo['dialogue'];
+
+			let tempHTML = '';
+			tempHTML += "<ul>";
+			for(let j=0; j<jsonInfo['locations'].length; j++){
+				let location = jsonInfo['locations'][j];
+				tempHTML += `<li>${location}</li>`;
+			}
+			tempHTML += "</ul>";
+			locations.innerHTML = tempHTML;
+
+			
+			if(type == "Chefes"){
+				world = document.querySelector('.world-changes');
+				tempHTML = '';
+				tempHTML += "<ul>";
+
+				if(jsonInfo['worldChanges'].length > 0){
+					for(let j=0; j<jsonInfo['worldChanges'].length; j++){
+						let quest = jsonInfo['worldChanges'][j];
+						tempHTML += `<li>${quest}</li>`;
 					}
+				}
+				else{
+					tempHTML += '<li>Nada referenciado.</li>';
+				}
+				
+				tempHTML += "</ul>";
+				world.innerHTML = tempHTML;
+			}
+
+			tempHTML = '';
+			tempHTML += "<ul>";
+			if(jsonInfo['strategies'].length > 0){
+				for(let j=0; j<jsonInfo['strategies'].length; j++){
+					let strategy = jsonInfo['strategies'][j];
+					tempHTML += `<li>${strategy}</li>`;
+				}
+			}
+			else{
+				tempHTML += '<li>Nenhuma estratégia.</li>';
+			}
+			tempHTML += "</ul>";
+			strategies.innerHTML = tempHTML;
+
+			card_image.innerHTML = `<img src="${jsonInfo['img']}" alt="${jsonInfo['name']}">`;
+		});
+	}
+}

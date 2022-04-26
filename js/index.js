@@ -1,5 +1,6 @@
 import {navSetup} from './navbar.js';
-import {loadCardsCharacter, loadCardsItem} from './cards.js';
+import {loadContentGuide} from './content.js';
+import {loadCardsItem, loadCardsCharacter, loadCardsEnemies} from './cards.js';
 
 /*
 Esse arquivo é o arquivo principal do projeto.
@@ -34,6 +35,12 @@ async function changePage(page, pageContent){
 		else if(pageContent === 'personagens'){
 			loadCardsCharacter(pageContent);
 		}
+		else if(pageContent.split('_')[0] === 'inimigos'){
+			loadCardsEnemies(pageContent.split('_')[0], pageContent.split('_')[1]);
+		}
+	}
+	else if(page === 'content'){
+		loadContentGuide(pageContent);
 	}
 
 	return;
@@ -63,4 +70,22 @@ itens_magias.addEventListener('click', ()=>{
 });
 personagens.addEventListener('click', ()=>{
 	changePage('cards', 'personagens');
+});
+inimigos_normais.addEventListener('click', ()=>{
+	changePage('cards', 'inimigos_Comuns');
+});
+inimigos_chefes.addEventListener('click', ()=>{
+	changePage('cards', 'inimigos_Chefes');
+});
+guia_gameplay.addEventListener('click', ()=>{
+	changePage('contentGuide', 'gameplay');
+});
+guia_online.addEventListener('click', ()=>{
+	changePage('contentGuide', 'online');
+});
+guia_finais.addEventListener('click', ()=>{
+	changePage('contentGuide', 'finais');
+});
+guia_ngplus.addEventListener('click', ()=>{
+	changePage('contentGuide', 'ngplus');
 });
