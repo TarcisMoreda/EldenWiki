@@ -35,9 +35,9 @@
 	align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+	flex-basis: 60%;
 	width: 100%;
 	height: auto;
-	flex-basis: 60%;
 	color: #fff;
 	text-decoration: none;
 	font-size: x-large;

@@ -26,16 +26,16 @@ export function loadContentItem(cardsJson){
 		card.addEventListener('click', async () => {
 			await changePageContentItem();
 			
-			let card_title = document.querySelector('.card-title');
+			let cardTitle = document.querySelector('.card-title');
 			let description = document.querySelector('.description');
-			let ig_description = document.querySelector('.ig-description');
+			let igDescription = document.querySelector('.ig-description');
 			let locations = document.querySelector('.locations');
 			let references = document.querySelector('.references');
-			let card_image = document.querySelector('.card-image');
+			let cardImage = document.querySelector('.card-image');
 
-			card_title.innerHTML = jsonInfo['name'];
+			cardTitle.innerHTML = jsonInfo['name'];
 			description.innerHTML = jsonInfo['description'];
-			ig_description.innerHTML = jsonInfo['ig-description'];
+			igDescription.innerHTML = jsonInfo['ig-description'];
 			
 			let tempHTML = '';
 			tempHTML += "<ul>";
@@ -60,16 +60,16 @@ export function loadContentItem(cardsJson){
 			tempHTML += "</ul>";
 			references.innerHTML = tempHTML;
 
-			card_image.style.backgroundImage = `url(./${jsonInfo['img']})`;
-			card_image.style.aspectRatio = '1/1';
+			cardImage.style.backgroundImage = `url(./${jsonInfo['img']})`;
+			cardImage.style.aspectRatio = '1/1';
 			
 			if(cardsJson['type'] == 'Itens'){
-				let card_title = document.querySelector('.card-title');
-				card_title.style.margin = '0 0 0 0';
+				let cardTitle = document.querySelector('.card-title');
+				cardTitle.style.margin = '0 0 0 0';
 			}
 			else if(cardsJson['type'] == 'Armaduras'){
-				let card_info = document.querySelector('.card-info');
-				card_info = card_info.querySelector('.text-medium');
+				let cardInfo = document.querySelector('.card-info');
+				cardInfo = cardInfo.querySelector('.text-medium');
 
 				let dmgNegation = `
 				<div class="dmg-negation">
@@ -108,13 +108,13 @@ export function loadContentItem(cardsJson){
 					${resistances}
 					${weight}
 				`;
-				card_info.innerHTML = finalDescription;
+				cardInfo.innerHTML = finalDescription;
 			}
 			else if(cardsJson['type'] == 'Armas'){
 				description.innerHTML += `<br><br>Material de upgrade: ${jsonInfo['upgrade']}`;
 
-				let card_info = document.querySelector('.card-info');
-				card_info = card_info.querySelector('.text-medium');
+				let cardInfo = document.querySelector('.card-info');
+				cardInfo = cardInfo.querySelector('.text-medium');
 
 				let attack = `
 					<div class="attack">
@@ -214,11 +214,11 @@ export function loadContentItem(cardsJson){
 					${ash}
 					${weight}
 				`;
-				card_info.innerHTML = finalDescription;
+				cardInfo.innerHTML = finalDescription;
 			}
 			else if(cardsJson['type'] == 'Magias'){
-				let card_info = document.querySelector('.card-info');
-				card_info = card_info.querySelector('.text-medium');
+				let cardInfo = document.querySelector('.card-info');
+				cardInfo = cardInfo.querySelector('.text-medium');
 				
 				let effect = `
 					<div class="effect">
@@ -250,7 +250,7 @@ export function loadContentItem(cardsJson){
 					${effect}
 					${costSlots}
 					`;
-				card_info.innerHTML = finalDescription;
+				cardInfo.innerHTML = finalDescription;
 			}
 		});
 	}
@@ -268,16 +268,16 @@ export function loadContentCharacters(cardsJson){
 		card.addEventListener('click', async () => {
 			await changePageContentCharacter();
 
-			let card_title = document.querySelector('.card-title');
+			let cardTitle = document.querySelector('.card-title');
 			let description = document.querySelector('.description');
 			let dialogue = document.querySelector('.dialogue');
 			let locations = document.querySelector('.locations');
 			let quests = document.querySelector('.quest');
 			let references = document.querySelector('.references');
-			let card_image = document.querySelector('.card-image');
+			let cardImage = document.querySelector('.card-image');
 
-			card_title.innerHTML = jsonInfo['name'];
-			card_title.style.margin = '0 0 0 0';
+			cardTitle.innerHTML = jsonInfo['name'];
+			cardTitle.style.margin = '0 0 0 0';
 			description.innerHTML = jsonInfo['description'];
 			dialogue.innerHTML = jsonInfo['dialogue'];
 
@@ -318,13 +318,9 @@ export function loadContentCharacters(cardsJson){
 			tempHTML += "</ul>";
 			quests.innerHTML = tempHTML;
 
-			card_image.innerHTML = `<img src="${jsonInfo['img']}" alt="${jsonInfo['name']}">`;
+			cardImage.innerHTML = `<img src="${jsonInfo['img']}" alt="${jsonInfo['name']}">`;
 		});
 	}
-}
-
-export function loadContentGuide(file){
-	return;
 }
 
 export function loadContentEnemies(cardsJson, type){
@@ -337,16 +333,16 @@ export function loadContentEnemies(cardsJson, type){
 		card.addEventListener('click', async () => {
 			await changePageContentEnemy();
 
-			let card_title = document.querySelector('.card-title');
+			let cardTitle = document.querySelector('.card-title');
 			let description = document.querySelector('.description');
 			let dialogue = document.querySelector('.ig-description');
 			let locations = document.querySelector('.locations');
 			let world = null;
 			let strategies = document.querySelector('.strategies');
-			let card_image = document.querySelector('.card-image');
+			let cardImage = document.querySelector('.card-image');
 
-			card_title.innerHTML = jsonInfo['name'];
-			card_title.style.margin = '0 0 0 0';
+			cardTitle.innerHTML = jsonInfo['name'];
+			if(type == 'Comuns'){cardTitle.style.margin = '0 0 0 0';}
 			description.innerHTML = jsonInfo['description'];
 			dialogue.innerHTML = jsonInfo['dialogue'];
 
@@ -393,7 +389,45 @@ export function loadContentEnemies(cardsJson, type){
 			tempHTML += "</ul>";
 			strategies.innerHTML = tempHTML;
 
-			card_image.innerHTML = `<img src="${jsonInfo['img']}" alt="${jsonInfo['name']}">`;
+			if(type == "Chefes"){
+				let cardInfo = document.querySelector('.card-info');
+				cardInfo = cardInfo.querySelector('.text-medium');
+
+				let hp =`<div class="hp">
+							<span class="text-medium">PV:</span> ${jsonInfo['hp']}
+						</div>`;
+				let resistances = `<div class="resistances">
+									<span class="text-medium">Resistências:</span>
+									<ul>`;
+				for(let j=0; j<jsonInfo['resistances'].length; j++){
+					let resistance = jsonInfo['resistances'][j];
+					resistances += `<li>${resistance}</li>`;
+				}
+				resistances += `</ul></div>`;
+
+				let weaknesses = `<div class="weaknesses">
+									<span class="text-medium">Fraquezas:</span>
+									<ul>`;
+				for(let j=0; j<jsonInfo['weaknesses'].length; j++){
+					let weakness = jsonInfo['weaknesses'][j];
+					weaknesses += `<li>${weakness}</li>`;
+				}
+				weaknesses += `</ul></div>`;
+
+				cardInfo.innerHTML = `
+					${hp}
+					${resistances}
+					${weaknesses}
+				`;
+			}
+
+			cardImage.innerHTML = `<img src="${jsonInfo['img']}" alt="${jsonInfo['name']}">`;
 		});
 	}
+}
+
+export async function loadContentGuide(file){
+	let content = document.querySelector('.content');
+	content.innerHTML = await fetch(`./html/${file}.html`).then(res => res.text());
+	return;
 }

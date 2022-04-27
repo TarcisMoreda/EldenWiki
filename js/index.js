@@ -20,9 +20,7 @@ let inimigos_normais = document.querySelector('.inimigos-normais');
 let inimigos_chefes = document.querySelector('.inimigos-chefes');
 
 let guia_gameplay = document.querySelector('.guia-gameplay');
-let guia_online = document.querySelector('.guia-online');
 let guia_finais = document.querySelector('.guia-finais');
-let guia_ngplus = document.querySelector('.guia-ngplus');
 
 async function changePage(page, pageContent){
 	let content = document.querySelector('.content');
@@ -38,9 +36,6 @@ async function changePage(page, pageContent){
 		else if(pageContent.split('_')[0] === 'inimigos'){
 			loadCardsEnemies(pageContent.split('_')[0], pageContent.split('_')[1]);
 		}
-	}
-	else if(page === 'content'){
-		loadContentGuide(pageContent);
 	}
 
 	return;
@@ -78,14 +73,8 @@ inimigos_chefes.addEventListener('click', ()=>{
 	changePage('cards', 'inimigos_Chefes');
 });
 guia_gameplay.addEventListener('click', ()=>{
-	changePage('contentGuide', 'gameplay');
-});
-guia_online.addEventListener('click', ()=>{
-	changePage('contentGuide', 'online');
+	changePage('gameplay');
 });
 guia_finais.addEventListener('click', ()=>{
-	changePage('contentGuide', 'finais');
-});
-guia_ngplus.addEventListener('click', ()=>{
-	changePage('contentGuide', 'ngplus');
+	changePage('finais');
 });
