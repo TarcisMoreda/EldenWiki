@@ -5,7 +5,7 @@
 			"name":"Melina",
 			"dialogue":"Eu sou Melina.<br>Eu te ofereço um acordo.",
 			"description":"Melina é um NPC essencial, ela pede ajuda para o jogador para chegar ao pé da Térvore, em troca ela faz o papel de uma Dama, tornando suas runas em força.<br><br>Melina também é uma personagem muito misteriosa que não dá muitas pistas sobre seu passado, apenas falando que nasceu no pé da Térvore.<br><br>Ela também lembra o jogador que dele não tem damas na vida dele.",
-			"img":"/img/personagens/NPCs/melina.jpg",
+			"img":"img/personagens/NPCs/melina.jpg",
 			"type":"Távola Redonda",
 			"locations":[
 				"Ela aparecerá em várias Graças pelo mapa, mesmo que tecnicamente ela sempre esteja junto do jogador."
